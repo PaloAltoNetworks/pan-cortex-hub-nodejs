@@ -32,7 +32,7 @@ PAN_REFRESH_TOKEN=<refresj_token> \
 node application.js
 ```
 
-```javasript
+```javascript
 const cortex = require('pan-cortex-hub');
 
 async function main() {
