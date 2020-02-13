@@ -7,6 +7,7 @@ import { CortexHubHelper, FsCredProvider, HubMetadata } from 'pan-cortex-hub'
 declare const APP_REDIRECT_FULL_URL: string
 declare const APP_REDIRECT_PATH: string
 declare const AES_SECRET: string
+// required mandatory PAN_CLIENT_ID and PAN_CLIENT_SECRET environmental variables
 
 const TENANT_ID = "default-tenant"
 
