@@ -1,0 +1,30 @@
+[pan-cortex-hub](../README.md) › [IdpErrorResponse](idperrorresponse.md)
+
+# Interface: IdpErrorResponse
+
+## Hierarchy
+
+* **IdpErrorResponse**
+
+## Index
+
+### Properties
+
+* [error](idperrorresponse.md#error)
+* [error_description](idperrorresponse.md#error_description)
+
+## Properties
+
+###  error
+
+• **error**: *string*
+
+Defined in src/hub/credentials_provider.ts:69
+
+___
+
+###  error_description
+
+• **error_description**: *string*
+
+Defined in src/hub/credentials_provider.ts:70
