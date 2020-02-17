@@ -69,7 +69,7 @@ ___
 
 *Overrides [CredentialsBase](credentialsbase.md).[getToken](credentialsbase.md#abstract-gettoken)*
 
-Defined in src/hub/credentials_devtoken.ts:133
+Defined in src/hub/credentials_devtoken.ts:135
 
 Returns the access token or undefined if no refresh operation has been executed
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **factory**(`ops?`: [DevTokenCredentialsOptions](../interfaces/devtokencredentialsoptions.md)): *[DevTokenCredentials](devtokencredentials.md)*
 
-Defined in src/hub/credentials_devtoken.ts:92
+Defined in src/hub/credentials_devtoken.ts:94
 
 Factory method to instantiate a DevTokenCredentials class. You must
 either execute this function in an environment with the variable

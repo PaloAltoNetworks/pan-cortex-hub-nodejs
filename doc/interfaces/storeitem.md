@@ -25,7 +25,7 @@ Data Lake storage item
 
 • **metadata**? : *T*
 
-Defined in src/hub/credentials_provider.ts:80
+Defined in src/hub/credentials_provider.ts:81
 
 Optional metadata
 
@@ -35,6 +35,6 @@ ___
 
 • **secrets**? : *[CredentialsItem](credentialsitem.md)*
 
-Defined in src/hub/credentials_provider.ts:84
+Defined in src/hub/credentials_provider.ts:85
 
 OAuth2 secrets and related data

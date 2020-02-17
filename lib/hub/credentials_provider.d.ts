@@ -101,7 +101,6 @@ export interface CredentialProviderOptions {
  * @typeparam T type of the metadata to attach to any data lake instance
 */
 export declare abstract class CortexCredentialProvider<T> {
-    private refreshing;
     private clientId;
     private clientSecret;
     private idpTokenUrl;
@@ -112,6 +111,7 @@ export declare abstract class CortexCredentialProvider<T> {
     private retrierAttempts?;
     private retrierDelay?;
     private accTokenGuardTime;
+    private emitter;
     private errorTools;
     /**
      * Class constructor

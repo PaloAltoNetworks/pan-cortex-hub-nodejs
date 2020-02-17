@@ -30,7 +30,7 @@ Options for the FS Credentials Provider factory
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[accTokenGuardTime](credentialprovideroptions.md#optional-acctokenguardtime)*
 
-Defined in src/hub/credentials_provider.ts:144
+Defined in src/hub/credentials_provider.ts:145
 
 How soon to expiration before the access token is automatically refreshed. Defaults to `300` (5 minutes)
 
@@ -52,7 +52,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[idpRevokeUrl](credentialprovideroptions.md#optional-idprevokeurl)*
 
-Defined in src/hub/credentials_provider.ts:140
+Defined in src/hub/credentials_provider.ts:141
 
 IDP Token Revoke Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RevokeToken`
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[idpTokenUrl](credentialprovideroptions.md#optional-idptokenurl)*
 
-Defined in src/hub/credentials_provider.ts:136
+Defined in src/hub/credentials_provider.ts:137
 
 IDP Token Operation Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RequestToken`
 
@@ -76,7 +76,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[retrierAttempts](credentialprovideroptions.md#optional-retrierattempts)*
 
-Defined in src/hub/credentials_provider.ts:148
+Defined in src/hub/credentials_provider.ts:149
 
 How many attempts to contact IDP before giving up. Defaults to `3`
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[retrierDelay](credentialprovideroptions.md#optional-retrierdelay)*
 
-Defined in src/hub/credentials_provider.ts:152
+Defined in src/hub/credentials_provider.ts:153
 
 How many milliseconds to wait between retry attempts. Defauls to `100` milliseconds
 

@@ -23,7 +23,7 @@ Options to customize a DevTokenCredentials subclass
 
 • **developerToken**? : *undefined | string*
 
-Defined in src/hub/credentials_devtoken.ts:51
+Defined in src/hub/credentials_devtoken.ts:52
 
 Developer Token string
 
@@ -33,7 +33,7 @@ ___
 
 • **developerTokenProvider**? : *undefined | string*
 
-Defined in src/hub/credentials_devtoken.ts:47
+Defined in src/hub/credentials_devtoken.ts:48
 
 URI for the developer token provider
 
@@ -43,7 +43,7 @@ ___
 
 • **entryPoint**? : *undefined | string*
 
-Defined in src/hub/credentials_devtoken.ts:55
+Defined in src/hub/credentials_devtoken.ts:56
 
 Cortex API fqdn to use (region)
 
@@ -53,7 +53,7 @@ ___
 
 • **guardTime**? : *undefined | number*
 
-Defined in src/hub/credentials_devtoken.ts:60
+Defined in src/hub/credentials_devtoken.ts:61
 
 Amount of seconds ahead of access_token expiration in which a refresh
 operation should be attempted

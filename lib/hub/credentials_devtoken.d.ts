@@ -40,6 +40,7 @@ export declare class DevTokenCredentials extends CredentialsBase {
     private guardTime;
     private accessToken;
     private validUntil;
+    private emitter;
     private errorTools;
     private constructor();
     /**

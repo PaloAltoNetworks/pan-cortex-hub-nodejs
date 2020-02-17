@@ -101,7 +101,7 @@
 
 Ƭ **AugmentedIdpResponse**: *[IdpResponse](interfaces/idpresponse.md) & object*
 
-Defined in src/hub/credentials_provider.ts:44
+Defined in src/hub/credentials_provider.ts:45
 
 Cortex credential set with additional `validUntil` field
 
@@ -133,7 +133,7 @@ Supported HTTP methods
 
 • **ACCESS_GUARD**: *300* = 300
 
-Defined in src/hub/credentials_provider.ts:20
+Defined in src/hub/credentials_provider.ts:21
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 • **APIEPMAP**: *object*
 
-Defined in src/hub/credentials_devtoken.ts:23
+Defined in src/hub/credentials_devtoken.ts:24
 
 Defined in src/hub/credentials_provider_simple.ts:22
 
@@ -169,7 +169,7 @@ ___
 
 • **DEV_TOKEN_PROVIDER**: *string*
 
-Defined in src/hub/credentials_devtoken.ts:23
+Defined in src/hub/credentials_devtoken.ts:24
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 • **ENV_DEVELOPER_TOKEN**: *"PAN_DEVELOPER_TOKEN"* = "PAN_DEVELOPER_TOKEN"
 
-Defined in src/hub/credentials_devtoken.ts:21
+Defined in src/hub/credentials_devtoken.ts:22
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 • **ENV_DEVELOPER_TOKEN_PROVIDER**: *"PAN_DEVELOPER_TOKEN_PROVIDER"* = "PAN_DEVELOPER_TOKEN_PROVIDER"
 
-Defined in src/hub/credentials_devtoken.ts:22
+Defined in src/hub/credentials_devtoken.ts:23
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 • **IDP_REVOKE_URL**: *string*
 
-Defined in src/hub/credentials_provider.ts:21
+Defined in src/hub/credentials_provider.ts:22
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 • **IDP_TOKEN_URL**: *string*
 
-Defined in src/hub/credentials_provider.ts:21
+Defined in src/hub/credentials_provider.ts:22
 
 ___
 
@@ -467,7 +467,7 @@ ___
 
 ▸ **isCredentialItem**(`obj`: any): *obj is CredentialsItem*
 
-Defined in src/hub/credentials_provider.ts:117
+Defined in src/hub/credentials_provider.ts:118
 
 Conveniente type guard to check an object against the `CredentialsItem` interface
 
@@ -485,7 +485,7 @@ ___
 
 ▸ **isDevTokenSrvResponse**(`obj`: any): *obj is DevTokenSrvResponse*
 
-Defined in src/hub/credentials_devtoken.ts:35
+Defined in src/hub/credentials_devtoken.ts:36
 
 **Parameters:**
 
@@ -519,7 +519,7 @@ ___
 
 ▸ **isIdpErrorResponse**(`obj`: any): *obj is IdpErrorResponse*
 
-Defined in src/hub/credentials_provider.ts:124
+Defined in src/hub/credentials_provider.ts:125
 
 **Parameters:**
 
@@ -535,7 +535,7 @@ ___
 
 ▸ **parseIdpResponse**(`obj`: any): *[AugmentedIdpResponse](README.md#augmentedidpresponse)*
 
-Defined in src/hub/credentials_provider.ts:51
+Defined in src/hub/credentials_provider.ts:52
 
 **Parameters:**
 
