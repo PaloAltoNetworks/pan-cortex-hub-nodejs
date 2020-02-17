@@ -22,7 +22,7 @@ Represents an raw Cortex IDP credential set
 
 • **access_token**: *string*
 
-Defined in src/hub/credentials_provider.ts:30
+Defined in src/hub/credentials_provider.ts:31
 
 JWT access_token value
 
@@ -32,7 +32,7 @@ ___
 
 • **expires_in**: *string*
 
-Defined in src/hub/credentials_provider.ts:38
+Defined in src/hub/credentials_provider.ts:39
 
 Expiration duration (in seconds)
 
@@ -42,6 +42,6 @@ ___
 
 • **refresh_token**? : *undefined | string*
 
-Defined in src/hub/credentials_provider.ts:34
+Defined in src/hub/credentials_provider.ts:35
 
 Optional new refresh_token value

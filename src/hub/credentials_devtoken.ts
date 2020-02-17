@@ -17,6 +17,7 @@ import { CredentialsBase } from './credentials'
 import { expTokenExtractor, HubError } from './utils'
 import { cortexConstants } from '../constants'
 import { commonLogger, logLevel } from '../commonlogger'
+import { EventEmitter } from 'events'
 
 const ENV_DEVELOPER_TOKEN = 'PAN_DEVELOPER_TOKEN'
 const ENV_DEVELOPER_TOKEN_PROVIDER = 'PAN_DEVELOPER_TOKEN_PROVIDER'
@@ -70,6 +71,7 @@ export class DevTokenCredentials extends CredentialsBase {
     private guardTime: number
     private accessToken: string
     private validUntil: number
+    private emitter: EventEmitter | undefined = undefined
     private errorTools = new ErrorTools(HubError)
 
     private constructor(entryPoint: string, developerToken: string, developerTokenProvider: string, guardTime: number) {
@@ -131,12 +133,24 @@ export class DevTokenCredentials extends CredentialsBase {
      * @returns the access token if refreshed or `force` equals `true`
      */
     async getToken(force?: boolean): Promise<string | undefined> {
-        let returnData = force === true
         if (this.accessToken === undefined || Date.now() + this.guardTime * 1000 > this.validUntil * 1000) {
-            this.accessToken = await this.devTokenConsume()
-            this.validUntil = expTokenExtractor(this.accessToken)
-            returnData = true
+            if (!this.emitter) {
+                this.emitter = new EventEmitter();
+                this.devTokenConsume().then(token => {
+                    this.accessToken = token
+                    this.validUntil = expTokenExtractor(token)
+                    this.emitter!.emit('data', token)
+                }, (e: Error) => {
+                    commonLogger(logLevel.INFO, `Error retrieving token (${e.message})`)
+                    this.emitter!.emit('data', undefined)
+                }).finally(() => {
+                    this.emitter = undefined
+                })
+            }
+            return new Promise<string | undefined>((res) => {
+                this.emitter!.on('data', res)
+            })
         }
-        return Promise.resolve((returnData) ? this.accessToken : undefined)
+        return Promise.resolve((force === true) ? this.accessToken : undefined)
     }
 }

@@ -20,6 +20,6 @@ Expected shape of the object returned by the Credentials Provider
 
 • **access_token**: *string*
 
-Defined in src/hub/credentials_devtoken.ts:32
+Defined in src/hub/credentials_devtoken.ts:33
 
 access token value

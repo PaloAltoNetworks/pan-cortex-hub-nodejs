@@ -16,6 +16,7 @@ import { Credentials } from './credentials'
 import { fetch, FetchOptions, ErrorTools } from '../fetch'
 import { HubError } from './utils'
 import { cortexConstants } from '../constants'
+import { EventEmitter } from 'events'
 
 const ACCESS_GUARD = 300 // 5 minutes
 const { IDP_REVOKE_URL, IDP_TOKEN_URL } = cortexConstants
@@ -160,7 +161,6 @@ export interface CredentialProviderOptions {
  * @typeparam T type of the metadata to attach to any data lake instance
 */
 export abstract class CortexCredentialProvider<T>  {
-    private refreshing: boolean
     private clientId: string
     private clientSecret: string
     private idpTokenUrl: string
@@ -169,6 +169,7 @@ export abstract class CortexCredentialProvider<T>  {
     private retrierAttempts?: number
     private retrierDelay?: number
     private accTokenGuardTime: number
+    private emitter: EventEmitter | undefined = undefined
     private errorTools = new ErrorTools(HubError)
 
     /**
@@ -186,7 +187,7 @@ export abstract class CortexCredentialProvider<T>  {
         this.retrierAttempts = ops.retrierAttempts
         this.retrierDelay = ops.retrierDelay
         this.store = {}
-        this.refreshing = false
+        this.emitter = undefined
         if (this.accTokenGuardTime > 3300) {
             throw new HubError('ConfigError', `Property 'accTokenGuardTime' must be, at max 3300 seconds (${this.accTokenGuardTime})`)
         }
@@ -479,25 +480,30 @@ export abstract class CortexCredentialProvider<T>  {
         if (storeItem) {
             const itemSecret = storeItem.secrets
             if (itemSecret) {
-                let returnData = force === true
-                if (!this.refreshing && Date.now() + this.accTokenGuardTime * 1000 > itemSecret.validUntil * 1000) {
-                    this.refreshing = true
-                    commonLogger(logLevel.INFO, 'Asking for a new access_token')
-                    try {
-                        let idpResponse = await this.refreshAccessToken(itemSecret.refreshToken)
-                        itemSecret.accessToken = idpResponse.access_token
-                        itemSecret.validUntil = idpResponse.validUntil
-                        if (idpResponse.refresh_token) {
-                            itemSecret.refreshToken = idpResponse.refresh_token
-                            commonLogger(logLevel.INFO, 'Received new Cortex Refresh Token')
-                        }
-                        await this.upsertStoreItem(datalakeId, storeItem)
-                    } finally {
-                        this.refreshing = false
+                if (Date.now() + this.accTokenGuardTime * 1000 > itemSecret.validUntil * 1000) {
+                    if (!this.emitter) {
+                        this.emitter = new EventEmitter();
+                        this.refreshAccessToken(itemSecret.refreshToken).then(async idpResponse => {
+                            itemSecret.accessToken = idpResponse.access_token
+                            itemSecret.validUntil = idpResponse.validUntil
+                            if (idpResponse.refresh_token) {
+                                itemSecret.refreshToken = idpResponse.refresh_token
+                                commonLogger(logLevel.INFO, 'Received new Cortex Refresh Token')
+                            }
+                            await this.upsertStoreItem(datalakeId, storeItem)
+                            this.emitter!.emit('data', idpResponse.access_token)
+                        }, (e: Error) => {
+                            commonLogger(logLevel.INFO, `Error retrieving token (${e.message})`)
+                            this.emitter!.emit('data', undefined)
+                        }).finally(() => {
+                            this.emitter = undefined
+                        })
                     }
-                    returnData = true
+                    return new Promise<string | undefined>((res) => {
+                        this.emitter!.on('data', res)
+                    })
                 }
-                return Promise.resolve((returnData) ? itemSecret.accessToken : undefined)
+                return Promise.resolve((force === true) ? itemSecret.accessToken : undefined)
             } else {
                 throw new HubError('HubClient', `Datalake ${datalakeId} do not have secrets yet`)
             }

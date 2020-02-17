@@ -19,7 +19,7 @@
 
 • **error**: *string*
 
-Defined in src/hub/credentials_provider.ts:69
+Defined in src/hub/credentials_provider.ts:70
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **error_description**: *string*
 
-Defined in src/hub/credentials_provider.ts:70
+Defined in src/hub/credentials_provider.ts:71

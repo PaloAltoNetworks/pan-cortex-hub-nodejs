@@ -44,7 +44,7 @@
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[constructor](cortexcredentialprovider.md#protected-constructor)*
 
-Defined in src/hub/credentials_provider.ts:172
+Defined in src/hub/credentials_provider.ts:173
 
 Class constructor
 
@@ -102,7 +102,7 @@ Defined in src/hub/credentials_provider.ts:168
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithCode](cortexcredentialprovider.md#addwithcode)*
 
-Defined in src/hub/credentials_provider.ts:368
+Defined in src/hub/credentials_provider.ts:369
 
 Issues a new credentials object for a datalake you have static access to
 its initial code.
@@ -143,7 +143,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithRefreshToken](cortexcredentialprovider.md#addwithrefreshtoken)*
 
-Defined in src/hub/credentials_provider.ts:326
+Defined in src/hub/credentials_provider.ts:327
 
 Issues a new credentials object for a datalake you have static access to its `refreshToken`.
 
@@ -169,7 +169,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[deleteDatalake](cortexcredentialprovider.md#deletedatalake)*
 
-Defined in src/hub/credentials_provider.ts:461
+Defined in src/hub/credentials_provider.ts:462
 
 Completely removes a datalake from the store (it revokes the refresh
 token if already authorized)
@@ -208,7 +208,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getAccessToken](cortexcredentialprovider.md#getaccesstoken)*
 
-Defined in src/hub/credentials_provider.ts:476
+Defined in src/hub/credentials_provider.ts:477
 
 Main method used by a bound Credentials object. Returns the current `access_token` and its
 expiration time. It auto-refreshes the `access_token` if needed based on the `accTokenGuardTime`
@@ -233,7 +233,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getClientId](cortexcredentialprovider.md#getclientid)*
 
-Defined in src/hub/credentials_provider.ts:199
+Defined in src/hub/credentials_provider.ts:200
 
 Exposes the OAuth2 application client_id
 
@@ -249,7 +249,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getCredentialsObject](cortexcredentialprovider.md#getcredentialsobject)*
 
-Defined in src/hub/credentials_provider.ts:401
+Defined in src/hub/credentials_provider.ts:402
 
 Retrieves the Credentials object for a given datalake
 
@@ -301,7 +301,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[revokeDatalake](cortexcredentialprovider.md#revokedatalake)*
 
-Defined in src/hub/credentials_provider.ts:421
+Defined in src/hub/credentials_provider.ts:422
 
 Revokes a previous authorized datalake (revokes its OAUTH2 `refresh_token`)
 
@@ -321,7 +321,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-Defined in src/hub/credentials_provider.ts:210
+Defined in src/hub/credentials_provider.ts:211
 
 Exposes the internal store. It does not deep-copy the objects so take
 extra care when modifying its content. Do not use this method unless you
@@ -339,7 +339,7 @@ Name | Type | Description |
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-Defined in src/hub/credentials_provider.ts:211
+Defined in src/hub/credentials_provider.ts:212
 
 **Parameters:**
 
@@ -354,7 +354,7 @@ Name | Type |
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-Defined in src/hub/credentials_provider.ts:212
+Defined in src/hub/credentials_provider.ts:213
 
 **Returns:** *Promise‹[StoreItem](../interfaces/storeitem.md)‹[HubMetadata](../interfaces/hubmetadata.md)‹never››[]›*
 
