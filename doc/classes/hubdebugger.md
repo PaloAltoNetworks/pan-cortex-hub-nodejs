@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [HubDebugger](hubdebugger.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [HubDebugger](hubdebugger.md)
 
 # Class: HubDebugger
 

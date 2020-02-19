@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CortexHelperOptions](cortexhelperoptions.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CortexHelperOptions](cortexhelperoptions.md)
 
 # Interface: CortexHelperOptions
 

@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [FsCredProvider](fscredprovider.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [FsCredProvider](fscredprovider.md)
 
 # Class: FsCredProvider <**T**>
 

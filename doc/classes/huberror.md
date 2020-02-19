@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [HubError](huberror.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [HubError](huberror.md)
 
 # Class: HubError
 

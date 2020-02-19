@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [HubMetadata](hubmetadata.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [HubMetadata](hubmetadata.md)
 
 # Interface: HubMetadata <**T**>
 

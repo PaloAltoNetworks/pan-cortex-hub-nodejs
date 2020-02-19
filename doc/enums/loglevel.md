@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [logLevel](loglevel.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [logLevel](loglevel.md)
 
 # Enumeration: logLevel
 

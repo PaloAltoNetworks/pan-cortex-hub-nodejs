@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CredentialsDebugger](credentialsdebugger.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CredentialsDebugger](credentialsdebugger.md)
 
 # Class: CredentialsDebugger
 

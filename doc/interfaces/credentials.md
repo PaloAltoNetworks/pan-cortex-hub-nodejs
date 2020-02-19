@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [Credentials](credentials.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [Credentials](credentials.md)
 
 # Interface: Credentials
 

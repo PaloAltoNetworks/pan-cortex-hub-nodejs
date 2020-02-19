@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CortexClientParams](cortexclientparams.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CortexClientParams](cortexclientparams.md)
 
 # Interface: CortexClientParams <**T**>
 

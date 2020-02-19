@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [ErrorTools](errortools.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [ErrorTools](errortools.md)
 
 # Class: ErrorTools <**P**>
 

@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [FetchResponse](fetchresponse.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [FetchResponse](fetchresponse.md)
 
 # Class: FetchResponse
 

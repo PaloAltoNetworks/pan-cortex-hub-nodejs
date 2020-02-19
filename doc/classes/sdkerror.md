@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [SdkError](sdkerror.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [SdkError](sdkerror.md)
 
 # Class: SdkError
 

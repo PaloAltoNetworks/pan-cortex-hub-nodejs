@@ -1,7 +1,12 @@
 {
-  "name": "pan-cortex-hub",
+  "name": "@paloaltonetworks/pan-cortex-hub",
   "version": "0.1.0",
   "description": "Palo Alto Networks Cortex hub client library",
+  "homepage": "https://github.com/xhoms/pan-cortex-hub-nodejs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xhoms/pan-cortex-hub-nodejs.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:lib && npm run build:test && npm run build:doc",

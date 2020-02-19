@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [DevTokenSrvResponse](devtokensrvresponse.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [DevTokenSrvResponse](devtokensrvresponse.md)
 
 # Interface: DevTokenSrvResponse
 

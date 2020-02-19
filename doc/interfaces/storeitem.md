@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [StoreItem](storeitem.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [StoreItem](storeitem.md)
 
 # Interface: StoreItem <**T**>
 
