@@ -25,7 +25,7 @@ Data Lake storage item
 
 • **metadata**? : *T*
 
-Defined in src/hub/credentials_provider.ts:81
+*Defined in [src/hub/credentials_provider.ts:81](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L81)*
 
 Optional metadata
 
@@ -35,6 +35,6 @@ ___
 
 • **secrets**? : *[CredentialsItem](credentialsitem.md)*
 
-Defined in src/hub/credentials_provider.ts:85
+*Defined in [src/hub/credentials_provider.ts:85](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L85)*
 
 OAuth2 secrets and related data

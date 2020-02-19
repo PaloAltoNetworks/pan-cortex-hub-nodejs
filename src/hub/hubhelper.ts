@@ -307,7 +307,7 @@ export class CortexHubHelper<T extends { [key: string]: string }> {
     /**
      * Retrieve the list of data lake id's that has been successfully authorized
      * by the user
-     * @param tenantId 
+     * @param tenantId requesting Tenant ID
      * @returns and array with all data lake id's owned by the provided tenant
      * identifier that contain secrets
      */

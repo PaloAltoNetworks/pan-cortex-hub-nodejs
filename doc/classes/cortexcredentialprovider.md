@@ -54,7 +54,7 @@ type of the metadata to attach to any data lake instance
 
 \+ **new CortexCredentialProvider**(`ops`: [CredentialProviderOptions](../interfaces/credentialprovideroptions.md) & object): *[CortexCredentialProvider](cortexcredentialprovider.md)*
 
-Defined in src/hub/credentials_provider.ts:173
+*Defined in [src/hub/credentials_provider.ts:173](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L173)*
 
 Class constructor
 
@@ -72,7 +72,7 @@ Name | Type | Description |
 
 • **store**: *object*
 
-Defined in src/hub/credentials_provider.ts:168
+*Defined in [src/hub/credentials_provider.ts:168](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L168)*
 
 #### Type declaration:
 
@@ -84,7 +84,7 @@ Defined in src/hub/credentials_provider.ts:168
 
 ▸ **addWithCode**(`datalakeId`: string, `entryPoint`: string, `oa2code`: object, `metadata?`: T): *Promise‹[Credentials](../interfaces/credentials.md)›*
 
-Defined in src/hub/credentials_provider.ts:369
+*Defined in [src/hub/credentials_provider.ts:369](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L369)*
 
 Issues a new credentials object for a datalake you have static access to
 its initial code.
@@ -123,7 +123,7 @@ ___
 
 ▸ **addWithRefreshToken**(`datalakeId`: string, `entryPoint`: string, `refreshToken`: string, `prefetch?`: undefined | object, `metadata?`: T): *Promise‹[Credentials](../interfaces/credentials.md)›*
 
-Defined in src/hub/credentials_provider.ts:327
+*Defined in [src/hub/credentials_provider.ts:327](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L327)*
 
 Issues a new credentials object for a datalake you have static access to its `refreshToken`.
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **deleteDatalake**(`datalakeId`: string): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:462
+*Defined in [src/hub/credentials_provider.ts:462](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L462)*
 
 Completely removes a datalake from the store (it revokes the refresh
 token if already authorized)
@@ -166,7 +166,7 @@ ___
 
 ▸ **deleteStoreItem**(`datalakeId`: string): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:535
+*Defined in [src/hub/credentials_provider.ts:535](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L535)*
 
 Implementation dependant. Must delete an item from the store
 
@@ -184,7 +184,7 @@ ___
 
 ▸ **getAccessToken**(`datalakeId`: string, `force`: boolean): *Promise‹string | undefined›*
 
-Defined in src/hub/credentials_provider.ts:477
+*Defined in [src/hub/credentials_provider.ts:477](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L477)*
 
 Main method used by a bound Credentials object. Returns the current `access_token` and its
 expiration time. It auto-refreshes the `access_token` if needed based on the `accTokenGuardTime`
@@ -207,7 +207,7 @@ ___
 
 ▸ **getClientId**(): *string*
 
-Defined in src/hub/credentials_provider.ts:200
+*Defined in [src/hub/credentials_provider.ts:200](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L200)*
 
 Exposes the OAuth2 application client_id
 
@@ -221,7 +221,7 @@ ___
 
 ▸ **getCredentialsObject**(`datalakeId`: string): *Promise‹[Credentials](../interfaces/credentials.md)›*
 
-Defined in src/hub/credentials_provider.ts:402
+*Defined in [src/hub/credentials_provider.ts:402](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L402)*
 
 Retrieves the Credentials object for a given datalake
 
@@ -241,7 +241,7 @@ ___
 
 ▸ **getStoreItem**(`datalakeId`: string): *Promise‹[StoreItem](../interfaces/storeitem.md)‹T› | undefined›*
 
-Defined in src/hub/credentials_provider.ts:542
+*Defined in [src/hub/credentials_provider.ts:542](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L542)*
 
 Implementation dependant. Must return the store item
 
@@ -261,7 +261,7 @@ ___
 
 ▸ **loadDb**(): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:549
+*Defined in [src/hub/credentials_provider.ts:549](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L549)*
 
 Implementation dependant. A way to trigger the external DB initial load must be provided.
 The subclass implementation should compare the protected object `store`
@@ -275,7 +275,7 @@ ___
 
 ▸ **revokeDatalake**(`datalakeId`: string): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:422
+*Defined in [src/hub/credentials_provider.ts:422](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L422)*
 
 Revokes a previous authorized datalake (revokes its OAUTH2 `refresh_token`)
 
@@ -293,7 +293,7 @@ ___
 
 ▸ **storeItem**(`dlid`: string): *Promise‹[StoreItem](../interfaces/storeitem.md)‹T› | undefined›*
 
-Defined in src/hub/credentials_provider.ts:211
+*Defined in [src/hub/credentials_provider.ts:211](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L211)*
 
 Exposes the internal store. It does not deep-copy the objects so take
 extra care when modifying its content. Do not use this method unless you
@@ -309,7 +309,7 @@ Name | Type | Description |
 
 ▸ **storeItem**(`dlid`: string, `value`: [StoreItem](../interfaces/storeitem.md)‹T›): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:212
+*Defined in [src/hub/credentials_provider.ts:212](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L212)*
 
 **Parameters:**
 
@@ -322,7 +322,7 @@ Name | Type |
 
 ▸ **storeItem**(): *Promise‹[StoreItem](../interfaces/storeitem.md)‹T›[]›*
 
-Defined in src/hub/credentials_provider.ts:213
+*Defined in [src/hub/credentials_provider.ts:213](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L213)*
 
 **Returns:** *Promise‹[StoreItem](../interfaces/storeitem.md)‹T›[]›*
 
@@ -332,7 +332,7 @@ ___
 
 ▸ **upsertStoreItem**(`datalakeId`: string, `item`: [StoreItem](../interfaces/storeitem.md)‹T›): *Promise‹void›*
 
-Defined in src/hub/credentials_provider.ts:529
+*Defined in [src/hub/credentials_provider.ts:529](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L529)*
 
 Implementation dependant. Must create or update the corresponfing item in
 the store

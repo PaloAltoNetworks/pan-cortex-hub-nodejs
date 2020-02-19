@@ -19,7 +19,7 @@
 
 • **error**: *string*
 
-Defined in src/hub/credentials_provider.ts:70
+*Defined in [src/hub/credentials_provider.ts:70](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L70)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **error_description**: *string*
 
-Defined in src/hub/credentials_provider.ts:71
+*Defined in [src/hub/credentials_provider.ts:71](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L71)*

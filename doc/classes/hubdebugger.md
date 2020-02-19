@@ -44,7 +44,7 @@ class
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[constructor](cortexhubhelper.md#constructor)*
 
-Defined in src/hub/hubhelper.ts:131
+*Defined in [src/hub/hubhelper.ts:131](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L131)*
 
 Constructor method
 
@@ -64,7 +64,7 @@ Name | Type | Description |
 
 • **credDebugger**: *[CredentialsDebugger](credentialsdebugger.md)*
 
-Defined in src/hub/hub_debugger.ts:74
+*Defined in [src/hub/hub_debugger.ts:74](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hub_debugger.ts#L74)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[credProvider](cortexhubhelper.md#protected-credprovider)*
 
-Defined in src/hub/hubhelper.ts:130
+*Defined in [src/hub/hubhelper.ts:130](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L130)*
 
 ## Methods
 
@@ -84,7 +84,7 @@ Defined in src/hub/hubhelper.ts:130
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[deleteDatalake](cortexhubhelper.md#deletedatalake)*
 
-Defined in src/hub/hubhelper.ts:340
+*Defined in [src/hub/hubhelper.ts:340](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L340)*
 
 Deletes a datalake metadata record
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **dumpDatabase**(): *Promise‹string›*
 
-Defined in src/hub/hub_debugger.ts:100
+*Defined in [src/hub/hub_debugger.ts:100](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hub_debugger.ts#L100)*
 
 Dumps the internal CredentialsProvider store as a JSON document
 
@@ -117,7 +117,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[getCredentialsObject](cortexhubhelper.md#getcredentialsobject)*
 
-Defined in src/hub/hubhelper.ts:350
+*Defined in [src/hub/hubhelper.ts:350](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L350)*
 
 Get a credentials object for this tenant data lake combination
 
@@ -140,7 +140,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[getDatalake](cortexhubhelper.md#getdatalake)*
 
-Defined in src/hub/hubhelper.ts:327
+*Defined in [src/hub/hubhelper.ts:327](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L327)*
 
 Gets metadata of a given Datalake ID as a `CortexClientParams` object
 
@@ -163,7 +163,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[hubParamsRegister](cortexhubhelper.md#hubparamsregister)*
 
-Defined in src/hub/hubhelper.ts:248
+*Defined in [src/hub/hubhelper.ts:248](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L248)*
 
 Parses the CortexHub BASE64 params string into a CortexClientParams object
 
@@ -186,7 +186,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[idpAuthCallback](cortexhubhelper.md#idpauthcallback)*
 
-Defined in src/hub/hubhelper.ts:218
+*Defined in [src/hub/hubhelper.ts:218](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L218)*
 
 Completes the OAuth2 code grant flow and returns a valid Credentials
 object for the just authorized datalake
@@ -211,7 +211,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[idpAuthRequest](cortexhubhelper.md#idpauthrequest)*
 
-Defined in src/hub/hubhelper.ts:185
+*Defined in [src/hub/hubhelper.ts:185](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L185)*
 
 Prepares an IDP authorization request
 
@@ -235,16 +235,16 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[listActiveDatalake](cortexhubhelper.md#listactivedatalake)*
 
-Defined in src/hub/hubhelper.ts:314
+*Defined in [src/hub/hubhelper.ts:314](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L314)*
 
 Retrieve the list of data lake id's that has been successfully authorized
 by the user
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`tenantId` | string |
+Name | Type | Description |
+------ | ------ | ------ |
+`tenantId` | string | requesting Tenant ID |
 
 **Returns:** *Promise‹string[]›*
 
@@ -259,7 +259,7 @@ ___
 
 *Inherited from [CortexHubHelper](cortexhubhelper.md).[listDatalake](cortexhubhelper.md#listdatalake)*
 
-Defined in src/hub/hubhelper.ts:300
+*Defined in [src/hub/hubhelper.ts:300](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L300)*
 
 Retrieves the list of datalakes registered under this tenant
 
@@ -280,7 +280,7 @@ ___
 
 ▸ **factory**(`idpCallbackUrl`: string, `ops?`: [CredentialProviderOptions](../interfaces/credentialprovideroptions.md) & [CortexHelperOptions](../interfaces/cortexhelperoptions.md) & object): *[HubDebugger](hubdebugger.md)*
 
-Defined in src/hub/hub_debugger.ts:89
+*Defined in [src/hub/hub_debugger.ts:89](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hub_debugger.ts#L89)*
 
 Convenience method to instantiate `HubDebugger` objects
 

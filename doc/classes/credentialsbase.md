@@ -31,7 +31,7 @@
 
 \+ **new CredentialsBase**(`entryPoint`: string): *[CredentialsBase](credentialsbase.md)*
 
-Defined in src/hub/credentials.ts:34
+*Defined in [src/hub/credentials.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials.ts#L34)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ Name | Type |
 
 *Implementation of [Credentials](../interfaces/credentials.md)*
 
-Defined in src/hub/credentials.ts:42
+*Defined in [src/hub/credentials.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials.ts#L42)*
 
 **Returns:** *string*
 
@@ -61,7 +61,7 @@ ___
 
 *Implementation of [Credentials](../interfaces/credentials.md)*
 
-Defined in src/hub/credentials.ts:40
+*Defined in [src/hub/credentials.ts:40](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials.ts#L40)*
 
 **Parameters:**
 

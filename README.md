@@ -1,7 +1,7 @@
 # pan-cortex-hub-nodejs
 Collection of `Credentials` objects to be used alongside applications leveraging
 the Cortex Data Lake API [See
-https://spring.paloaltonetworks.com/xhoms/pan-cortex-data-lake-nodejs](https://spring.paloaltonetworks.com/xhoms/pan-cortex-data-lake-nodejs)
+https://github.com/xhoms/pan-cortex-data-lake-nodejs](https://github.com/xhoms/pan-cortex-data-lake-nodejs)
 
 It also provides the `CortexHubHelper` abstract class as well as a couple of
 implementations for quick prototyping SaaS Components to interface with Cortex hub.

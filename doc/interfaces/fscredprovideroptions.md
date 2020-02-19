@@ -30,7 +30,7 @@ Options for the FS Credentials Provider factory
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[accTokenGuardTime](credentialprovideroptions.md#optional-acctokenguardtime)*
 
-Defined in src/hub/credentials_provider.ts:145
+*Defined in [src/hub/credentials_provider.ts:145](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L145)*
 
 How soon to expiration before the access token is automatically refreshed. Defaults to `300` (5 minutes)
 
@@ -40,7 +40,7 @@ ___
 
 • **configFile**? : *undefined | string*
 
-Defined in src/hub/credentials_provider_fs.ts:186
+*Defined in [src/hub/credentials_provider_fs.ts:186](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L186)*
 
 file that will contain the database. Will be created empty if does not exist
 
@@ -52,7 +52,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[idpRevokeUrl](credentialprovideroptions.md#optional-idprevokeurl)*
 
-Defined in src/hub/credentials_provider.ts:141
+*Defined in [src/hub/credentials_provider.ts:141](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L141)*
 
 IDP Token Revoke Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RevokeToken`
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[idpTokenUrl](credentialprovideroptions.md#optional-idptokenurl)*
 
-Defined in src/hub/credentials_provider.ts:137
+*Defined in [src/hub/credentials_provider.ts:137](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L137)*
 
 IDP Token Operation Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RequestToken`
 
@@ -76,7 +76,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[retrierAttempts](credentialprovideroptions.md#optional-retrierattempts)*
 
-Defined in src/hub/credentials_provider.ts:149
+*Defined in [src/hub/credentials_provider.ts:149](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L149)*
 
 How many attempts to contact IDP before giving up. Defaults to `3`
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [CredentialProviderOptions](credentialprovideroptions.md).[retrierDelay](credentialprovideroptions.md#optional-retrierdelay)*
 
-Defined in src/hub/credentials_provider.ts:153
+*Defined in [src/hub/credentials_provider.ts:153](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L153)*
 
 How many milliseconds to wait between retry attempts. Defauls to `100` milliseconds
 
@@ -98,7 +98,7 @@ ___
 
 • **secret**? : *undefined | string*
 
-Defined in src/hub/credentials_provider_fs.ts:184
+*Defined in [src/hub/credentials_provider_fs.ts:184](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L184)*
 
 secret that will be used to cipher / decipher secrets. You better
 provide it from environmental variables for customer data privacy
