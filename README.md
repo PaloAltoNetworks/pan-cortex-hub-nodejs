@@ -6,13 +6,40 @@ https://github.com/xhoms/pan-cortex-data-lake-nodejs](https://github.com/xhoms/p
 It also provides the `CortexHubHelper` abstract class as well as a couple of
 implementations for quick prototyping SaaS Components to interface with Cortex hub.
 
+## Installation
+Incorporate the `pan-cortex-hub` NodeJS package in your project with the following
+bash command:
+
+```bash
+npm i @paloaltonetworks/pan-cortex-hub
+```
+
+You can also install the package from its GITHUB repo
+```bash
+npm i git://github.com/xhoms/pan-cortex-hub-nodejs
+```
+
+You can now import the package into your NodeJS code.
+
+```javascript
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
+```
+
+Source code is written in TypeScript and the build process productes type
+definition files which means you can leverage strongly type and code
+auto-complete features.
+
+```ts
+import * as cortex from '@paloaltonetworks/pan-cortex-hub'
+```
+
 ## `Credentials` collection
 Quick overview of available classes
 ### `StaticCredentials`
 The most basic of them all. It just wraps a static `access_token` value
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 const ACCESS_TOKEN = 'eyaa...4t8t';
 const cred = new cortex.StaticCredentials(ACCESS_TOKEN, cortex.cortexConstants.APIEPMAP.americas);
@@ -33,7 +60,7 @@ node application.js
 ```
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 async function main() {
     const cred = await cortex.SimpleCredentialsProvider.factory();
@@ -43,7 +70,7 @@ async function main() {
 But, if needed, you can provide the secrets programatically.
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 async function main() {
     const cred = await cortex.SimpleCredentialsProvider.factory({
@@ -65,7 +92,7 @@ node application.js
 ```
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 const cred = cortex.DevTokenCredentials.factory({
     developerTokenProvider: TOKEN_PROVIDER_URL
@@ -75,12 +102,38 @@ const cred = cortex.DevTokenCredentials.factory({
 You can pass the developer token programatically if needed
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 const cred = cortex.DevTokenCredentials.factory({
     developerToken: DEVELOPER_TOKEN,
     developerTokenProvider: TOKEN_PROVIDER_URL
 });
+```
+
+#### Example using `DevTokenCredentials` in `pan-cortex-data-lake`
+The following code snippet shows how to leverage this package's Credentials
+collection with `QueryServiceClient` objects from the `pan-cortex-data-lake`
+package.
+
+```javascript
+const dl = require("@paloaltonetworks/pan-cortex-data-lake");
+const hub = require("@paloaltonetworks/pan-cortex-hub");
+const SQLCMD = 'SELECT * FROM `<instance_id>.firewall.traffic` LIMIT 100';
+const DEVELOPER_TOKEN = 'eyJh...BE9A';
+const DEVELOPER_TOKEN_PROVIDER = 'https://app.apiexplorer.rocks/request_token';
+
+async function main() {
+    const credentials = hub.DevTokenCredentials.factory({
+        developerToken: DEVELOPER_TOKEN,
+        developerTokenProvider: DEVELOPER_TOKEN_PROVIDER
+    });
+    const qsc = dl.QueryServiceClient.factory({ cortexDefCredentials: credentials });
+    for await (const page of qsc.iterator(SQLCMD)) {
+        console.log(page);
+    }
+}
+
+main().catch(console.error);
 ```
 
 ## Credential Providers
@@ -125,7 +178,7 @@ node application.js
 ```
 
 ```javascript
-const cortex = require('pan-cortex-hub');
+const cortex = require('@paloaltonetworks/pan-cortex-hub');
 
 async function main() {
     const credProvider = await cortex.FsCredProvider.factory();

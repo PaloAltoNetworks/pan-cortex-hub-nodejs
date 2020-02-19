@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [IdpResponse](idpresponse.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [IdpResponse](idpresponse.md)
 
 # Interface: IdpResponse
 

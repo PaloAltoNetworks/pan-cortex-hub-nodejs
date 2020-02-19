@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CredentialsBase](credentialsbase.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CredentialsBase](credentialsbase.md)
 
 # Class: CredentialsBase
 

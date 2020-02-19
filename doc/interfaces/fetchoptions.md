@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [FetchOptions](fetchoptions.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [FetchOptions](fetchoptions.md)
 
 # Interface: FetchOptions
 

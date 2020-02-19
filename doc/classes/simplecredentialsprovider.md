@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [SimpleCredentialsProvider](simplecredentialsprovider.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [SimpleCredentialsProvider](simplecredentialsprovider.md)
 
 # Class: SimpleCredentialsProvider
 

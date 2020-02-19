@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CortexCredentialProvider](cortexcredentialprovider.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CortexCredentialProvider](cortexcredentialprovider.md)
 
 # Class: CortexCredentialProvider <**T**>
 

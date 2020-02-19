@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [DevTokenCredentials](devtokencredentials.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [DevTokenCredentials](devtokencredentials.md)
 
 # Class: DevTokenCredentials
 

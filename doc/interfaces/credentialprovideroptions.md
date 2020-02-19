@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CredentialProviderOptions](credentialprovideroptions.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CredentialProviderOptions](credentialprovideroptions.md)
 
 # Interface: CredentialProviderOptions
 

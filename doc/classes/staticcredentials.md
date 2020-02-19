@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [StaticCredentials](staticcredentials.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [StaticCredentials](staticcredentials.md)
 
 # Class: StaticCredentials
 

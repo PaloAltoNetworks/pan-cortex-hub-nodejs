@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [FsCredProviderOptions](fscredprovideroptions.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [FsCredProviderOptions](fscredprovideroptions.md)
 
 # Interface: FsCredProviderOptions
 

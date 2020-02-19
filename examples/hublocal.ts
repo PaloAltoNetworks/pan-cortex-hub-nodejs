@@ -1,8 +1,7 @@
-import * as cortex from 'pan-cortex-hub'
 import * as express from 'express'
 import * as fs from 'fs'
 import * as https from 'https'
-import { CortexHubHelper, FsCredProvider, HubMetadata } from 'pan-cortex-hub'
+import { CortexHubHelper, FsCredProvider, HubMetadata, cortexConstants } from '@paloaltonetworks/pan-cortex-hub'
 
 declare const APP_REDIRECT_FULL_URL: string
 declare const APP_REDIRECT_PATH: string
@@ -42,7 +41,7 @@ async function main() {
     saasComponent.get('/auth-request/:tenantid/:datalakeid', async (req, resp) => {
         const { tenantid, datalakeid } = req.params
         try {
-            const redirectUrl = await hubHelper.idpAuthRequest(tenantid, datalakeid, [cortex.cortexConstants.OAUTH2SCOPEMAP.ls_read])
+            const redirectUrl = await hubHelper.idpAuthRequest(tenantid, datalakeid, [cortexConstants.OAUTH2SCOPEMAP.ls_read])
             resp.redirect(redirectUrl.toString())
         } catch (e) {
             return resp.status(500).send((e as Error).message)

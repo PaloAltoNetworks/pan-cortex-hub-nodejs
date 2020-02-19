@@ -1,6 +1,6 @@
-[pan-cortex-hub](README.md)
+[@paloaltonetworks/pan-cortex-hub](README.md)
 
-# pan-cortex-hub
+# @paloaltonetworks/pan-cortex-hub
 
 ## Index
 

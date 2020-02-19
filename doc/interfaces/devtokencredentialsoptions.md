@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [DevTokenCredentialsOptions](devtokencredentialsoptions.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [DevTokenCredentialsOptions](devtokencredentialsoptions.md)
 
 # Interface: DevTokenCredentialsOptions
 

@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [CortexHubHelper](cortexhubhelper.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [CortexHubHelper](cortexhubhelper.md)
 
 # Class: CortexHubHelper <**T**>
 

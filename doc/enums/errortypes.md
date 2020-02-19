@@ -1,4 +1,4 @@
-[pan-cortex-hub](../README.md) › [ErrorTypes](errortypes.md)
+[@paloaltonetworks/pan-cortex-hub](../README.md) › [ErrorTypes](errortypes.md)
 
 # Enumeration: ErrorTypes
 
