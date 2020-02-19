@@ -31,7 +31,7 @@ describes the class type that would be thrown (if needed)
 
 \+ **new ErrorTools**(`errClass`: object): *[ErrorTools](errortools.md)*
 
-Defined in src/fetch.ts:126
+*Defined in [src/fetch.ts:126](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L126)*
 
 Builds an `ErrorTools` object
 
@@ -49,7 +49,7 @@ Name | Type | Description |
 
 ▸ **retrier**<**T**, **O**>(`errorType`: keyof typeof ErrorTypes, `n`: number, `delay`: number, `op`: function, ...`params`: T[]): *Promise‹O›*
 
-Defined in src/fetch.ts:180
+*Defined in [src/fetch.ts:180](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L180)*
 
 Generic retrier method that attemps to execute a function that returns a
 response of type `<O>` provided an arrays of arguments of type `<T>`
@@ -101,7 +101,7 @@ ___
 
 ▸ **tryAsyncOp**<**T**, **U**>(`errorType`: keyof typeof ErrorTypes, `op`: function, ...`params`: U): *Promise‹T›*
 
-Defined in src/fetch.ts:161
+*Defined in [src/fetch.ts:161](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L161)*
 
 Attempt an async operation that returns an object of type `<T>` and that
 consumes arguments of type `...<U>[]`
@@ -144,7 +144,7 @@ ___
 
 ▸ **tryOp**<**T**, **U**>(`errorType`: keyof typeof ErrorTypes, `op`: function, ...`params`: U): *T*
 
-Defined in src/fetch.ts:145
+*Defined in [src/fetch.ts:145](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L145)*
 
 Attempt an operation that returns an object of type `<T>` and that
 consumes arguments of type `...<U>[]`

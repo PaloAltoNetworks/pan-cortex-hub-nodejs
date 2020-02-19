@@ -31,7 +31,7 @@ Describes the `params` object provided by Cortex hub.
 
 • **customFields**? : *T*
 
-Defined in src/hub/hubhelper.ts:60
+*Defined in [src/hub/hubhelper.ts:60](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L60)*
 
 Optional fields requested in the application manifest file
 
@@ -41,7 +41,7 @@ ___
 
 • **instance_id**: *string*
 
-Defined in src/hub/hubhelper.ts:33
+*Defined in [src/hub/hubhelper.ts:33](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L33)*
 
 Unique ID assigned by Cortex HUB to this application<->datalake combination
 
@@ -51,7 +51,7 @@ ___
 
 • **instance_name**? : *undefined | string*
 
-Defined in src/hub/hubhelper.ts:38
+*Defined in [src/hub/hubhelper.ts:38](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L38)*
 
 Convenient placeholder to allow applications using this SDK attach a friendly name to
 the Instance ID
@@ -62,7 +62,7 @@ ___
 
 • **location**: *object*
 
-Defined in src/hub/hubhelper.ts:43
+*Defined in [src/hub/hubhelper.ts:43](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L43)*
 
 Augmented `region` property provided by Cortex hub. Use the `paramsaParser` method to generate
 this augmentation out of the BASE64 string provided by Cortex hub
@@ -79,6 +79,6 @@ ___
 
 • **lsn**? : *undefined | string*
 
-Defined in src/hub/hubhelper.ts:56
+*Defined in [src/hub/hubhelper.ts:56](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L56)*
 
 Serial number of the Cortex Datalake at the other end of this Instance ID

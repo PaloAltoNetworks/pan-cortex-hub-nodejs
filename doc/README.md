@@ -101,7 +101,7 @@
 
 Ƭ **AugmentedIdpResponse**: *[IdpResponse](interfaces/idpresponse.md) & object*
 
-Defined in src/hub/credentials_provider.ts:45
+*Defined in [src/hub/credentials_provider.ts:45](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L45)*
 
 Cortex credential set with additional `validUntil` field
 
@@ -111,7 +111,7 @@ ___
 
 Ƭ **ConfigFile**: *object*
 
-Defined in src/hub/credentials_provider_fs.ts:27
+*Defined in [src/hub/credentials_provider_fs.ts:27](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L27)*
 
 #### Type declaration:
 
@@ -123,7 +123,7 @@ ___
 
 Ƭ **HttpMethod**: *"GET" | "POST" | "PUT" | "DELETE"*
 
-Defined in src/fetch.ts:22
+*Defined in [src/fetch.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L22)*
 
 Supported HTTP methods
 
@@ -133,7 +133,7 @@ Supported HTTP methods
 
 • **ACCESS_GUARD**: *300* = 300
 
-Defined in src/hub/credentials_provider.ts:21
+*Defined in [src/hub/credentials_provider.ts:21](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L21)*
 
 ___
 
@@ -141,13 +141,13 @@ ___
 
 • **APIEPMAP**: *object*
 
-Defined in src/hub/credentials_devtoken.ts:24
+*Defined in [src/hub/credentials_devtoken.ts:24](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L24)*
 
-Defined in src/hub/credentials_provider_simple.ts:22
+*Defined in [src/hub/credentials_provider_simple.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_simple.ts#L22)*
 
-Defined in src/hub/hubhelper.ts:22
+*Defined in [src/hub/hubhelper.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L22)*
 
-Defined in src/hub/autocredentials.ts:24
+*Defined in [src/hub/autocredentials.ts:24](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/autocredentials.ts#L24)*
 
 #### Type declaration:
 
@@ -161,7 +161,7 @@ ___
 
 • **CONFIG_FILE**: *"PANCLOUD_CONFIG.json"* = "PANCLOUD_CONFIG.json"
 
-Defined in src/hub/credentials_provider_fs.ts:25
+*Defined in [src/hub/credentials_provider_fs.ts:25](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L25)*
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 • **DEV_TOKEN_PROVIDER**: *string*
 
-Defined in src/hub/credentials_devtoken.ts:24
+*Defined in [src/hub/credentials_devtoken.ts:24](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L24)*
 
 ___
 
@@ -177,9 +177,9 @@ ___
 
 • **ENV_CLIENT_ID**: *"PAN_CLIENT_ID"* = "PAN_CLIENT_ID"
 
-Defined in src/hub/credentials_provider_fs.ts:22
+*Defined in [src/hub/credentials_provider_fs.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L22)*
 
-Defined in src/hub/hub_debugger.ts:20
+*Defined in [src/hub/hub_debugger.ts:20](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hub_debugger.ts#L20)*
 
 ___
 
@@ -187,9 +187,9 @@ ___
 
 • **ENV_CLIENT_SECRET**: *"PAN_CLIENT_SECRET"* = "PAN_CLIENT_SECRET"
 
-Defined in src/hub/credentials_provider_fs.ts:23
+*Defined in [src/hub/credentials_provider_fs.ts:23](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L23)*
 
-Defined in src/hub/hub_debugger.ts:21
+*Defined in [src/hub/hub_debugger.ts:21](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hub_debugger.ts#L21)*
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 • **ENV_DEVELOPER_TOKEN**: *"PAN_DEVELOPER_TOKEN"* = "PAN_DEVELOPER_TOKEN"
 
-Defined in src/hub/credentials_devtoken.ts:22
+*Defined in [src/hub/credentials_devtoken.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L22)*
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 • **ENV_DEVELOPER_TOKEN_PROVIDER**: *"PAN_DEVELOPER_TOKEN_PROVIDER"* = "PAN_DEVELOPER_TOKEN_PROVIDER"
 
-Defined in src/hub/credentials_devtoken.ts:23
+*Defined in [src/hub/credentials_devtoken.ts:23](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L23)*
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 • **ENV_SECRET**: *"PAN_SECRET"* = "PAN_SECRET"
 
-Defined in src/hub/credentials_provider_fs.ts:24
+*Defined in [src/hub/credentials_provider_fs.ts:24](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L24)*
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 • **EUFQDN**: *"api.nl.cdl.paloaltonetworks.com"* = "api.nl.cdl.paloaltonetworks.com"
 
-Defined in src/constants.ts:14
+*Defined in [src/constants.ts:14](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L14)*
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 • **IDP_AUTH_URL**: *string*
 
-Defined in src/hub/hubhelper.ts:22
+*Defined in [src/hub/hubhelper.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L22)*
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 • **IDP_REVOKE_URL**: *string*
 
-Defined in src/hub/credentials_provider.ts:22
+*Defined in [src/hub/credentials_provider.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L22)*
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 • **IDP_TOKEN_URL**: *string*
 
-Defined in src/hub/credentials_provider.ts:22
+*Defined in [src/hub/credentials_provider.ts:22](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L22)*
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 • **PAN_CLIENT_ID**: *"PAN_CLIENT_ID"* = "PAN_CLIENT_ID"
 
-Defined in src/hub/credentials_provider_simple.ts:23
+*Defined in [src/hub/credentials_provider_simple.ts:23](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_simple.ts#L23)*
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 • **PAN_CLIENT_SECRET**: *"PAN_CLIENT_SECRET"* = "PAN_CLIENT_SECRET"
 
-Defined in src/hub/credentials_provider_simple.ts:24
+*Defined in [src/hub/credentials_provider_simple.ts:24](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_simple.ts#L24)*
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 • **PAN_ENTRYPOINT**: *"PAN_ENTRYPOINT"* = "PAN_ENTRYPOINT"
 
-Defined in src/hub/credentials_provider_simple.ts:26
+*Defined in [src/hub/credentials_provider_simple.ts:26](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_simple.ts#L26)*
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 • **PAN_REFRESH_TOKEN**: *"PAN_REFRESH_TOKEN"* = "PAN_REFRESH_TOKEN"
 
-Defined in src/hub/credentials_provider_simple.ts:25
+*Defined in [src/hub/credentials_provider_simple.ts:25](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_simple.ts#L25)*
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 • **USFQDN**: *"cortex-prd1-api.us.cdl.paloaltonetworks.com"* = "cortex-prd1-api.us.cdl.paloaltonetworks.com"
 
-Defined in src/constants.ts:16
+*Defined in [src/constants.ts:16](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L16)*
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 • **currentLogLevel**: *[logLevel](enums/loglevel.md)* = (isNaN(envLevel) && logLevel.INFO) || envLevel
 
-Defined in src/commonlogger.ts:27
+*Defined in [src/commonlogger.ts:27](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L27)*
 
 ___
 
@@ -301,7 +301,7 @@ ___
 
 • **envLevel**: *number* = Number.parseInt(process.env['CORTEX_SDK_LOG'] || '', 10)
 
-Defined in src/commonlogger.ts:26
+*Defined in [src/commonlogger.ts:26](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L26)*
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 • **logFunc**: *debug[]* = [console.debug, console.info, console.warn, console.error]
 
-Defined in src/commonlogger.ts:28
+*Defined in [src/commonlogger.ts:28](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L28)*
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 • **seqno**: *number* = Math.floor(Math.random() * 10000)
 
-Defined in src/fetch.ts:34
+*Defined in [src/fetch.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L34)*
 
 ## Functions
 
@@ -325,7 +325,7 @@ Defined in src/fetch.ts:34
 
 ▸ **autoCredentials**(`opt?`: [CredentialProviderOptions](interfaces/credentialprovideroptions.md) & [DevTokenCredentialsOptions](interfaces/devtokencredentialsoptions.md) & object): *Promise‹[Credentials](interfaces/credentials.md)›*
 
-Defined in src/hub/autocredentials.ts:39
+*Defined in [src/hub/autocredentials.ts:39](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/autocredentials.ts#L39)*
 
 Convenience function for getting started that will do its best to build a
 Credentials object for you. It will use either values provided in the optiona
@@ -351,7 +351,7 @@ ___
 
 ▸ **commonLogger**(`error`: [Error](classes/sdkerror.md#static-error)): *void*
 
-Defined in src/commonlogger.ts:34
+*Defined in [src/commonlogger.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L34)*
 
 logs an error object
 
@@ -365,7 +365,7 @@ Name | Type | Description |
 
 ▸ **commonLogger**(`level`: [logLevel](enums/loglevel.md), `message`: string, `noPrefix?`: undefined | false | true): *void*
 
-Defined in src/commonlogger.ts:41
+*Defined in [src/commonlogger.ts:41](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L41)*
 
 logs a message string
 
@@ -385,7 +385,7 @@ ___
 
 ▸ **expTokenExtractor**(`token`: string): *number*
 
-Defined in src/hub/utils.ts:17
+*Defined in [src/hub/utils.ts:17](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/utils.ts#L17)*
 
 **Parameters:**
 
@@ -401,7 +401,7 @@ ___
 
 ▸ **fetch**(`url`: string, `ops`: [FetchOptions](interfaces/fetchoptions.md)): *Promise‹[FetchResponse](classes/fetchresponse.md)›*
 
-Defined in src/fetch.ts:85
+*Defined in [src/fetch.ts:85](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L85)*
 
 convenience method to perform a HTTP request
 
@@ -422,7 +422,7 @@ ___
 
 ▸ **isConfigFile**<**T**>(`obj`: any): *obj is ConfigFile<T>*
 
-Defined in src/hub/credentials_provider_fs.ts:29
+*Defined in [src/hub/credentials_provider_fs.ts:29](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L29)*
 
 **Type parameters:**
 
@@ -442,7 +442,7 @@ ___
 
 ▸ **isCortexClientParams**<**T**>(`obj`: any): *obj is CortexClientParams<T>*
 
-Defined in src/hub/hubhelper.ts:69
+*Defined in [src/hub/hubhelper.ts:69](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L69)*
 
 Convenience type guard function to check if a given object conforms to the
 `CortexClientParams` interface
@@ -467,7 +467,7 @@ ___
 
 ▸ **isCredentialItem**(`obj`: any): *obj is CredentialsItem*
 
-Defined in src/hub/credentials_provider.ts:118
+*Defined in [src/hub/credentials_provider.ts:118](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L118)*
 
 Conveniente type guard to check an object against the `CredentialsItem` interface
 
@@ -485,7 +485,7 @@ ___
 
 ▸ **isDevTokenSrvResponse**(`obj`: any): *obj is DevTokenSrvResponse*
 
-Defined in src/hub/credentials_devtoken.ts:36
+*Defined in [src/hub/credentials_devtoken.ts:36](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L36)*
 
 **Parameters:**
 
@@ -501,7 +501,7 @@ ___
 
 ▸ **isHubMetadata**(`obj`: any): *obj is HubMetadata<never>*
 
-Defined in src/hub/hubhelper.ts:104
+*Defined in [src/hub/hubhelper.ts:104](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L104)*
 
 Convenience type guard function to check if an object is a valid HubMetadata type
 
@@ -519,7 +519,7 @@ ___
 
 ▸ **isIdpErrorResponse**(`obj`: any): *obj is IdpErrorResponse*
 
-Defined in src/hub/credentials_provider.ts:125
+*Defined in [src/hub/credentials_provider.ts:125](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L125)*
 
 **Parameters:**
 
@@ -535,7 +535,7 @@ ___
 
 ▸ **parseIdpResponse**(`obj`: any): *[AugmentedIdpResponse](README.md#augmentedidpresponse)*
 
-Defined in src/hub/credentials_provider.ts:52
+*Defined in [src/hub/credentials_provider.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L52)*
 
 **Parameters:**
 
@@ -551,7 +551,7 @@ ___
 
 ▸ **passIvGenerator**(`secret`: string): *object*
 
-Defined in src/hub/credentials_provider_fs.ts:190
+*Defined in [src/hub/credentials_provider_fs.ts:190](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L190)*
 
 **Parameters:**
 
@@ -571,7 +571,7 @@ ___
 
 ▸ **promifyFs**<**T**>(`f`: function, ...`params`: any[]): *Promise‹T›*
 
-Defined in src/hub/credentials_provider_fs.ts:200
+*Defined in [src/hub/credentials_provider_fs.ts:200](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L200)*
 
 **Type parameters:**
 
@@ -599,7 +599,7 @@ ___
 
 ▸ **setLogLevel**(`level`: [logLevel](enums/loglevel.md)): *void*
 
-Defined in src/commonlogger.ts:63
+*Defined in [src/commonlogger.ts:63](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/commonlogger.ts#L63)*
 
 Change the log level of the common logger at runtime
 
@@ -617,7 +617,7 @@ ___
 
 ▸ **uuid**(`content`: string): *string*
 
-Defined in src/hub/utils.ts:45
+*Defined in [src/hub/utils.ts:45](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/utils.ts#L45)*
 
 **Parameters:**
 
@@ -633,7 +633,7 @@ Name | Type |
 
 ### ▪ **cortexConstants**: *object*
 
-Defined in src/constants.ts:21
+*Defined in [src/constants.ts:21](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L21)*
 
 Cortex constants
 
@@ -641,7 +641,7 @@ Cortex constants
 
 • **DEV_TOKEN_PROVIDER**: *string* = "https://app.developers.paloaltonetworks.com/request_token"
 
-Defined in src/constants.ts:56
+*Defined in [src/constants.ts:56](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L56)*
 
 URL of the Palo Alto Networks Developers Relations developer token service
 
@@ -649,7 +649,7 @@ URL of the Palo Alto Networks Developers Relations developer token service
 
 • **IDP_AUTH_URL**: *string* = "https://identity.paloaltonetworks.com/as/authorization.oauth2"
 
-Defined in src/constants.ts:52
+*Defined in [src/constants.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L52)*
 
 Identity provider URL for token operations
 
@@ -657,7 +657,7 @@ Identity provider URL for token operations
 
 • **IDP_REVOKE_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RevokeToken"
 
-Defined in src/constants.ts:48
+*Defined in [src/constants.ts:48](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L48)*
 
 Identity provider URL for token revoke operations
 
@@ -665,13 +665,13 @@ Identity provider URL for token revoke operations
 
 • **IDP_TOKEN_URL**: *string* = "https://api.paloaltonetworks.com/api/oauth2/RequestToken"
 
-Defined in src/constants.ts:44
+*Defined in [src/constants.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L44)*
 
 Identity provider URL for authentication requests
 
 ▪ **APIEPMAP**: *object*
 
-Defined in src/constants.ts:25
+*Defined in [src/constants.ts:25](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L25)*
 
 Map that links Cortex Data Lake regions with their corresponding FQDNs
 
@@ -681,7 +681,7 @@ Map that links Cortex Data Lake regions with their corresponding FQDNs
 
 ▪ **OAUTH2SCOPEMAP**: *object*
 
-Defined in src/constants.ts:38
+*Defined in [src/constants.ts:38](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/constants.ts#L38)*
 
 OAuth2 Identity Provider scopes for the Cortex Data Lake
 
@@ -693,76 +693,76 @@ ___
 
 ### ▪ **statusTextDict**: *object*
 
-Defined in src/fetch.ts:36
+*Defined in [src/fetch.ts:36](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L36)*
 
 ###  200
 
 • **200**: *string* = "200 OK"
 
-Defined in src/fetch.ts:37
+*Defined in [src/fetch.ts:37](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L37)*
 
 ###  300
 
 • **300**: *string* = "301 Moved Permanently"
 
-Defined in src/fetch.ts:38
+*Defined in [src/fetch.ts:38](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L38)*
 
 ###  302
 
 • **302**: *string* = "302 Found"
 
-Defined in src/fetch.ts:39
+*Defined in [src/fetch.ts:39](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L39)*
 
 ###  303
 
 • **303**: *string* = "303 See Other"
 
-Defined in src/fetch.ts:40
+*Defined in [src/fetch.ts:40](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L40)*
 
 ###  304
 
 • **304**: *string* = "304 Not Modified"
 
-Defined in src/fetch.ts:41
+*Defined in [src/fetch.ts:41](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L41)*
 
 ###  400
 
 • **400**: *string* = "400 Bad Request"
 
-Defined in src/fetch.ts:42
+*Defined in [src/fetch.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L42)*
 
 ###  401
 
 • **401**: *string* = "401 Unauthorized"
 
-Defined in src/fetch.ts:43
+*Defined in [src/fetch.ts:43](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L43)*
 
 ###  500
 
 • **500**: *string* = "500 Internal Server Error"
 
-Defined in src/fetch.ts:44
+*Defined in [src/fetch.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L44)*
 
 ###  501
 
 • **501**: *string* = "501 Not Implemented"
 
-Defined in src/fetch.ts:45
+*Defined in [src/fetch.ts:45](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L45)*
 
 ###  502
 
 • **502**: *string* = "502 Bad Gateway"
 
-Defined in src/fetch.ts:46
+*Defined in [src/fetch.ts:46](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L46)*
 
 ###  503
 
 • **503**: *string* = "503 Service Unavailable"
 
-Defined in src/fetch.ts:47
+*Defined in [src/fetch.ts:47](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L47)*
 
 ###  504
 
 • **504**: *string* = "504 Gateway Timeout"
 
-Defined in src/fetch.ts:48
+*Defined in [src/fetch.ts:48](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L48)*

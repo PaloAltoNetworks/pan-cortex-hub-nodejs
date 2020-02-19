@@ -33,7 +33,7 @@ operation failed
 
 \+ **new SdkError**(`errorType`: keyof typeof ErrorTypes, ...`params`: any[]): *[SdkError](sdkerror.md)*
 
-Defined in src/sdkError.ts:44
+*Defined in [src/sdkError.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/sdkError.ts#L44)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **errorType**: *keyof typeof ErrorTypes*
 
-Defined in src/sdkError.ts:44
+*Defined in [src/sdkError.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/sdkError.ts#L44)*
 
 ___
 
