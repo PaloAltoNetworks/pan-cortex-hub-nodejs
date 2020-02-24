@@ -1,7 +1,7 @@
 # pan-cortex-hub-nodejs
 Collection of `Credentials` objects to be used alongside applications leveraging
 the Cortex Data Lake API [See
-https://github.com/xhoms/pan-cortex-data-lake-nodejs](https://github.com/xhoms/pan-cortex-data-lake-nodejs)
+https://github.com/PaloAltoNetworks/pan-cortex-data-lake-nodejs](https://github.com/xhoms/pan-cortex-data-lake-nodejs)
 
 It also provides the `CortexHubHelper` abstract class as well as a couple of
 implementations for quick prototyping SaaS Components to interface with Cortex hub.
@@ -16,7 +16,7 @@ npm i @paloaltonetworks/pan-cortex-hub
 
 You can also install the package from its GITHUB repo
 ```bash
-npm i git://github.com/xhoms/pan-cortex-hub-nodejs
+npm i git://github.com/PaloAltoNetworks/pan-cortex-hub-nodejs
 ```
 
 You can now import the package into your NodeJS code.
