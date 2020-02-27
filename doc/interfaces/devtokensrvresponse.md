@@ -20,6 +20,6 @@ Expected shape of the object returned by the Credentials Provider
 
 • **access_token**: *string*
 
-*Defined in [src/hub/credentials_devtoken.ts:33](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_devtoken.ts#L33)*
+*Defined in [src/hub/credentials_devtoken.ts:33](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L33)*
 
 access token value

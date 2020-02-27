@@ -298,7 +298,7 @@ export class CortexHubHelper<T extends { [key: string]: string }> {
      * the Cortex hub
      */
     async listDatalake(tenantId: string): Promise<({ id: string, doc: CortexClientParams<T> })[]> {
-        await this.credProvider.loadDb()
+        await this.credProvider.loadDb(this.credProvider.store)
         return (await this.credProvider.storeItem()).
             filter(x => x.metadata && x.metadata.tenantId == tenantId).
             map(x => ({ id: x.metadata!.datalakeId, doc: x.metadata!.clientParams }))
@@ -312,7 +312,7 @@ export class CortexHubHelper<T extends { [key: string]: string }> {
      * identifier that contain secrets
      */
     async listActiveDatalake(tenantId: string): Promise<string[]> {
-        await this.credProvider.loadDb()
+        await this.credProvider.loadDb(this.credProvider.store)
         return (await this.credProvider.storeItem()).
             filter(x => x.secrets && x.metadata && x.metadata.tenantId == tenantId).
             map(x => x.metadata!.datalakeId)

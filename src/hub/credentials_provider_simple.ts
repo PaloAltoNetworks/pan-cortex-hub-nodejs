@@ -88,13 +88,15 @@ export class SimpleCredentialsProvider extends CortexCredentialProvider<never> {
         }
     }
 
-    protected async upsertStoreItem(datalakeId: string, item: StoreItem<never>): Promise<void> {
+    async upsertStoreItem(datalakeId: string, item: StoreItem<never>): Promise<void> {
         commonLogger(logLevel.INFO, 'Memory-only credential provider. Discarding operation')
     }
-    protected async deleteStoreItem(datalakeId: string): Promise<void> {
+
+    async deleteStoreItem(datalakeId: string): Promise<void> {
         commonLogger(logLevel.INFO, 'Memory-only credential provider. Discarding operation')
     }
-    protected async getStoreItem(datalakeId: string): Promise<StoreItem<never>> {
+
+    async getStoreItem(datalakeId: string): Promise<StoreItem<never>> {
         throw new SdkError('ConfigError', 'Memory-only credential provider')
     }
 

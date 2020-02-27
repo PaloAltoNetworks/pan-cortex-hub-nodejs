@@ -12,9 +12,9 @@ declare class CredentialsDebugger extends CortexCredentialProvider<HubMetadata<n
         clientId?: string;
         clientSecret?: string;
     }): CredentialsDebugger;
-    protected upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void>;
-    protected deleteStoreItem(datalakeId: string): Promise<void>;
-    protected getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>> | undefined>;
+    upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void>;
+    deleteStoreItem(datalakeId: string): Promise<void>;
+    getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>> | undefined>;
     loadDb(): Promise<void>;
 }
 /**
