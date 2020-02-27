@@ -24,7 +24,7 @@ SDK Representation of a Cortex credential set
 
 • **accessToken**: *string*
 
-*Defined in [src/hub/credentials_provider.ts:95](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L95)*
+*Defined in [src/hub/credentials_provider.ts:95](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L95)*
 
 JWT access_token value
 
@@ -34,7 +34,7 @@ ___
 
 • **datalakeId**: *string*
 
-*Defined in [src/hub/credentials_provider.ts:111](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L111)*
+*Defined in [src/hub/credentials_provider.ts:111](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L111)*
 
 data lake identifier (application instance id)
 
@@ -44,7 +44,7 @@ ___
 
 • **entryPoint**: *string*
 
-*Defined in [src/hub/credentials_provider.ts:103](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L103)*
+*Defined in [src/hub/credentials_provider.ts:103](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L103)*
 
 Cortex API fqdn (region) in which this access_token is valid
 
@@ -54,7 +54,7 @@ ___
 
 • **refreshToken**: *string*
 
-*Defined in [src/hub/credentials_provider.ts:107](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L107)*
+*Defined in [src/hub/credentials_provider.ts:107](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L107)*
 
 refresh_token value bound to this access_token
 
@@ -64,6 +64,6 @@ ___
 
 • **validUntil**: *number*
 
-*Defined in [src/hub/credentials_provider.ts:99](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L99)*
+*Defined in [src/hub/credentials_provider.ts:99](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L99)*
 
 Unix timestamp (in seconds) that mark the expiration time for this access_token

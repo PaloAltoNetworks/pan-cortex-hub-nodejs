@@ -45,16 +45,16 @@ class CredentialsDebugger extends CortexCredentialProvider<HubMetadata<never>>{
         }
     }
 
-    protected async upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void> {
+    async upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void> {
         commonLogger(logLevel.INFO, 'override: upsertStoreItem()')
         commonLogger(logLevel.INFO, `datalakeId: ${datalakeId}`)
         commonLogger(logLevel.INFO, `storeItem: ${JSON.stringify(item)}`)
     }
-    protected async deleteStoreItem(datalakeId: string): Promise<void> {
+    async deleteStoreItem(datalakeId: string): Promise<void> {
         commonLogger(logLevel.INFO, 'override: deleteStoreItem()')
         commonLogger(logLevel.INFO, `datalakeId: ${datalakeId}`)
     }
-    protected async getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>> | undefined> {
+    async getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>> | undefined> {
         commonLogger(logLevel.INFO, 'override: getStoreItem()')
         commonLogger(logLevel.INFO, `datalakeId: ${datalakeId}`)
         return undefined
@@ -98,6 +98,6 @@ export class HubDebugger extends CortexHubHelper<never> {
      * Dumps the internal CredentialsProvider store as a JSON document
      */
     async dumpDatabase(): Promise<string> {
-        return JSON.stringify(await this.credProvider.storeItem(), undefined, 1)
+        return JSON.stringify(this.credProvider.store, undefined, 1)
     }
 }

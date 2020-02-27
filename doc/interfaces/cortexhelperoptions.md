@@ -20,6 +20,6 @@ Optional configuration attributes for the `CortexHubHelper` class
 
 • **idpAuthUrl**? : *undefined | string*
 
-*Defined in [src/hub/hubhelper.ts:119](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/hubhelper.ts#L119)*
+*Defined in [src/hub/hubhelper.ts:119](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L119)*
 
 URL of the IDP authorization entry point (defaults to `https://identity.paloaltonetworks.com/as/authorization.oauth2`)

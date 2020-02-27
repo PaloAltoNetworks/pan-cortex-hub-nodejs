@@ -160,17 +160,17 @@ export class FsCredProvider<T> extends CortexCredentialProvider<T> {
         throw new HubError('ParseError', `Invalid configuration file format in ${this.configFileName}`)
     }
 
-    protected upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void> {
+    upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void> {
         commonLogger(logLevel.INFO, 'Lazy implementation of upsert with full sync operation')
         return this.fullSync()
     }
 
-    protected deleteStoreItem(datalakeId: string): Promise<void> {
+    deleteStoreItem(datalakeId: string): Promise<void> {
         commonLogger(logLevel.INFO, 'Lazy implementation of delete with full sync operation')
         return this.fullSync()
     }
 
-    protected async getStoreItem(datalakeId: string): Promise<StoreItem<T>> {
+    async getStoreItem(datalakeId: string): Promise<StoreItem<T>> {
         return this.store[datalakeId]
     }
 }
