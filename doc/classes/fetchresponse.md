@@ -27,7 +27,7 @@
 
 • **ok**: *boolean*
 
-*Defined in [src/fetch.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L52)*
+*Defined in [src/fetch.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L52)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **size**: *number*
 
-*Defined in [src/fetch.ts:55](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L55)*
+*Defined in [src/fetch.ts:55](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L55)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **status**: *number*
 
-*Defined in [src/fetch.ts:53](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L53)*
+*Defined in [src/fetch.ts:53](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L53)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **statusText**: *string*
 
-*Defined in [src/fetch.ts:54](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L54)*
+*Defined in [src/fetch.ts:54](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L54)*
 
 ## Methods
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **json**(): *any*
 
-*Defined in [src/fetch.ts:70](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L70)*
+*Defined in [src/fetch.ts:70](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L70)*
 
 **Returns:** *any*
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **text**(): *string*
 
-*Defined in [src/fetch.ts:66](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L66)*
+*Defined in [src/fetch.ts:66](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L66)*
 
 **Returns:** *string*
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **response**(`ok`: boolean, `data?`: undefined | string, `status?`: undefined | number): *[FetchResponse](fetchresponse.md)*
 
-*Defined in [src/fetch.ts:74](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L74)*
+*Defined in [src/fetch.ts:74](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L74)*
 
 **Parameters:**
 
