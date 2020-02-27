@@ -17,6 +17,10 @@ type of the metadata to attach to any data lake instance
 
   ↳ **FsCredProvider**
 
+## Implements
+
+* [SecretsStorage](../interfaces/secretsstorage.md)‹T›
+
 ## Index
 
 ### Constructors
@@ -25,22 +29,22 @@ type of the metadata to attach to any data lake instance
 
 ### Properties
 
-* [store](fscredprovider.md#protected-store)
+* [store](fscredprovider.md#store)
 
 ### Methods
 
 * [addWithCode](fscredprovider.md#addwithcode)
 * [addWithRefreshToken](fscredprovider.md#addwithrefreshtoken)
 * [deleteDatalake](fscredprovider.md#deletedatalake)
-* [deleteStoreItem](fscredprovider.md#protected-deletestoreitem)
+* [deleteStoreItem](fscredprovider.md#deletestoreitem)
 * [getAccessToken](fscredprovider.md#getaccesstoken)
 * [getClientId](fscredprovider.md#getclientid)
 * [getCredentialsObject](fscredprovider.md#getcredentialsobject)
-* [getStoreItem](fscredprovider.md#protected-getstoreitem)
+* [getStoreItem](fscredprovider.md#getstoreitem)
 * [loadDb](fscredprovider.md#loaddb)
 * [revokeDatalake](fscredprovider.md#revokedatalake)
 * [storeItem](fscredprovider.md#storeitem)
-* [upsertStoreItem](fscredprovider.md#protected-upsertstoreitem)
+* [upsertStoreItem](fscredprovider.md#upsertstoreitem)
 * [factory](fscredprovider.md#static-factory)
 
 ## Constructors
@@ -51,7 +55,7 @@ type of the metadata to attach to any data lake instance
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[constructor](cortexcredentialprovider.md#protected-constructor)*
 
-*Defined in [src/hub/credentials_provider.ts:173](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L173)*
+*Defined in [src/hub/credentials_provider.ts:208](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L208)*
 
 Class constructor
 
@@ -65,13 +69,13 @@ Name | Type | Description |
 
 ## Properties
 
-### `Protected` store
+###  store
 
 • **store**: *object*
 
-*Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[store](cortexcredentialprovider.md#protected-store)*
+*Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[store](cortexcredentialprovider.md#store)*
 
-*Defined in [src/hub/credentials_provider.ts:168](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L168)*
+*Defined in [src/hub/credentials_provider.ts:203](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L203)*
 
 #### Type declaration:
 
@@ -85,7 +89,7 @@ Name | Type | Description |
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithCode](cortexcredentialprovider.md#addwithcode)*
 
-*Defined in [src/hub/credentials_provider.ts:369](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L369)*
+*Defined in [src/hub/credentials_provider.ts:404](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L404)*
 
 Issues a new credentials object for a datalake you have static access to
 its initial code.
@@ -126,7 +130,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithRefreshToken](cortexcredentialprovider.md#addwithrefreshtoken)*
 
-*Defined in [src/hub/credentials_provider.ts:327](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L327)*
+*Defined in [src/hub/credentials_provider.ts:362](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L362)*
 
 Issues a new credentials object for a datalake you have static access to its `refreshToken`.
 
@@ -152,7 +156,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[deleteDatalake](cortexcredentialprovider.md#deletedatalake)*
 
-*Defined in [src/hub/credentials_provider.ts:462](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L462)*
+*Defined in [src/hub/credentials_provider.ts:497](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L497)*
 
 Completely removes a datalake from the store (it revokes the refresh
 token if already authorized)
@@ -167,13 +171,15 @@ Name | Type | Description |
 
 ___
 
-### `Protected` deleteStoreItem
+###  deleteStoreItem
 
 ▸ **deleteStoreItem**(`datalakeId`: string): *Promise‹void›*
 
-*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[deleteStoreItem](cortexcredentialprovider.md#protected-abstract-deletestoreitem)*
+*Implementation of [SecretsStorage](../interfaces/secretsstorage.md)*
 
-*Defined in [src/hub/credentials_provider_fs.ts:168](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L168)*
+*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[deleteStoreItem](cortexcredentialprovider.md#abstract-deletestoreitem)*
+
+*Defined in [src/hub/credentials_provider_fs.ts:168](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider_fs.ts#L168)*
 
 **Parameters:**
 
@@ -191,7 +197,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getAccessToken](cortexcredentialprovider.md#getaccesstoken)*
 
-*Defined in [src/hub/credentials_provider.ts:477](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L477)*
+*Defined in [src/hub/credentials_provider.ts:512](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L512)*
 
 Main method used by a bound Credentials object. Returns the current `access_token` and its
 expiration time. It auto-refreshes the `access_token` if needed based on the `accTokenGuardTime`
@@ -216,7 +222,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getClientId](cortexcredentialprovider.md#getclientid)*
 
-*Defined in [src/hub/credentials_provider.ts:200](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L200)*
+*Defined in [src/hub/credentials_provider.ts:235](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L235)*
 
 Exposes the OAuth2 application client_id
 
@@ -232,7 +238,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getCredentialsObject](cortexcredentialprovider.md#getcredentialsobject)*
 
-*Defined in [src/hub/credentials_provider.ts:402](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L402)*
+*Defined in [src/hub/credentials_provider.ts:437](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L437)*
 
 Retrieves the Credentials object for a given datalake
 
@@ -248,13 +254,15 @@ a `Credentials` object for the requested data lake
 
 ___
 
-### `Protected` getStoreItem
+###  getStoreItem
 
 ▸ **getStoreItem**(`datalakeId`: string): *Promise‹[StoreItem](../interfaces/storeitem.md)‹T››*
 
-*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[getStoreItem](cortexcredentialprovider.md#protected-abstract-getstoreitem)*
+*Implementation of [SecretsStorage](../interfaces/secretsstorage.md)*
 
-*Defined in [src/hub/credentials_provider_fs.ts:173](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L173)*
+*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[getStoreItem](cortexcredentialprovider.md#abstract-getstoreitem)*
+
+*Defined in [src/hub/credentials_provider_fs.ts:173](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider_fs.ts#L173)*
 
 **Parameters:**
 
@@ -272,7 +280,7 @@ ___
 
 *Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[loadDb](cortexcredentialprovider.md#abstract-loaddb)*
 
-*Defined in [src/hub/credentials_provider_fs.ts:137](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L137)*
+*Defined in [src/hub/credentials_provider_fs.ts:137](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider_fs.ts#L137)*
 
 Loads the data in the file
 
@@ -286,7 +294,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[revokeDatalake](cortexcredentialprovider.md#revokedatalake)*
 
-*Defined in [src/hub/credentials_provider.ts:422](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L422)*
+*Defined in [src/hub/credentials_provider.ts:457](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L457)*
 
 Revokes a previous authorized datalake (revokes its OAUTH2 `refresh_token`)
 
@@ -306,7 +314,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-*Defined in [src/hub/credentials_provider.ts:211](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L211)*
+*Defined in [src/hub/credentials_provider.ts:246](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L246)*
 
 Exposes the internal store. It does not deep-copy the objects so take
 extra care when modifying its content. Do not use this method unless you
@@ -324,7 +332,7 @@ Name | Type | Description |
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-*Defined in [src/hub/credentials_provider.ts:212](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L212)*
+*Defined in [src/hub/credentials_provider.ts:247](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L247)*
 
 **Parameters:**
 
@@ -339,19 +347,21 @@ Name | Type |
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[storeItem](cortexcredentialprovider.md#storeitem)*
 
-*Defined in [src/hub/credentials_provider.ts:213](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider.ts#L213)*
+*Defined in [src/hub/credentials_provider.ts:248](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L248)*
 
 **Returns:** *Promise‹[StoreItem](../interfaces/storeitem.md)‹T›[]›*
 
 ___
 
-### `Protected` upsertStoreItem
+###  upsertStoreItem
 
 ▸ **upsertStoreItem**(`datalakeId`: string, `item`: [StoreItem](../interfaces/storeitem.md)‹T›): *Promise‹void›*
 
-*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[upsertStoreItem](cortexcredentialprovider.md#protected-abstract-upsertstoreitem)*
+*Implementation of [SecretsStorage](../interfaces/secretsstorage.md)*
 
-*Defined in [src/hub/credentials_provider_fs.ts:163](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L163)*
+*Overrides [CortexCredentialProvider](cortexcredentialprovider.md).[upsertStoreItem](cortexcredentialprovider.md#abstract-upsertstoreitem)*
+
+*Defined in [src/hub/credentials_provider_fs.ts:163](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider_fs.ts#L163)*
 
 **Parameters:**
 
@@ -368,7 +378,7 @@ ___
 
 ▸ **factory**<**T**>(`ops?`: [FsCredProviderOptions](../interfaces/fscredprovideroptions.md)): *Promise‹[FsCredProvider](fscredprovider.md)‹T››*
 
-*Defined in [src/hub/credentials_provider_fs.ts:70](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/hub/credentials_provider_fs.ts#L70)*
+*Defined in [src/hub/credentials_provider_fs.ts:70](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider_fs.ts#L70)*
 
 Initializes a `CortexCredentialProvider` subclass that leverages the local filesystem as storage.
 State data will be stored in the file `PANCLOUD_CONFIG.json` option

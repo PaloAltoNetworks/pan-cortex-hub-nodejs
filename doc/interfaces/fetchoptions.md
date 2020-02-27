@@ -23,7 +23,7 @@ Interface that describes the options for a HTTP request
 
 • **body**? : *undefined | string*
 
-*Defined in [src/fetch.ts:30](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L30)*
+*Defined in [src/fetch.ts:30](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L30)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **headers**? : *undefined | object*
 
-*Defined in [src/fetch.ts:29](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L29)*
+*Defined in [src/fetch.ts:29](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L29)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **method**: *[HttpMethod](../README.md#httpmethod)*
 
-*Defined in [src/fetch.ts:28](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L28)*
+*Defined in [src/fetch.ts:28](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L28)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **timeout**? : *undefined | number*
 
-*Defined in [src/fetch.ts:31](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/8b95863/src/fetch.ts#L31)*
+*Defined in [src/fetch.ts:31](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/fetch.ts#L31)*
