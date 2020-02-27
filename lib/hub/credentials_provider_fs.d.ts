@@ -28,9 +28,9 @@ export declare class FsCredProvider<T> extends CortexCredentialProvider<T> {
      * Loads the data in the file
      */
     loadDb(): Promise<void>;
-    protected upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void>;
-    protected deleteStoreItem(datalakeId: string): Promise<void>;
-    protected getStoreItem(datalakeId: string): Promise<StoreItem<T>>;
+    upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void>;
+    deleteStoreItem(datalakeId: string): Promise<void>;
+    getStoreItem(datalakeId: string): Promise<StoreItem<T>>;
 }
 /**
  * Options for the FS Credentials Provider factory

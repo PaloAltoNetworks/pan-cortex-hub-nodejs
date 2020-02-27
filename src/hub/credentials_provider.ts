@@ -128,6 +128,41 @@ function isIdpErrorResponse(obj: any): obj is IdpErrorResponse {
 }
 
 /**
+ * Methods that deal with secret storage
+ */
+export interface SecretsStorage<T> {
+    /**
+     * Creates of updates a secrets object belonging to a specific data lake identifier
+     * @param datalakeId the data lake unique identifier
+     * @param item secrets object
+     */
+    upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void>
+
+    /**
+     * Removes an object from the store
+     * @param datalakeId the data lake unique identifier
+     */
+    deleteStoreItem(datalakeId: string): Promise<void>;
+
+    /**
+     * Returns a secrets object from the store.
+     * 
+     * @param datalakeId the data lake unique identifier
+     * @returns the secrets object or undefined if it doesn't exists
+     */
+    getStoreItem(datalakeId: string): Promise<StoreItem<T> | undefined>;
+
+    /**
+     * Loads secrets stored externaly into the in-memory store. Implementator
+     * should compare the passed object with the external store contents and
+     * update the former accordingly.
+     * 
+     * @param store refrence to the current in-memory store
+     */
+    loadDb(store: { [dlid: string]: StoreItem<T> }): Promise<void>;
+}
+
+/**
  * Configuration options for a `CortexCredentialProvider` class
  */
 export interface CredentialProviderOptions {
@@ -160,12 +195,12 @@ export interface CredentialProviderOptions {
  * datalake's record.
  * @typeparam T type of the metadata to attach to any data lake instance
 */
-export abstract class CortexCredentialProvider<T>  {
+export abstract class CortexCredentialProvider<T> implements SecretsStorage<T> {
     private clientId: string
     private clientSecret: string
     private idpTokenUrl: string
     private idpRevokeUrl: string
-    protected store: { [dlid: string]: StoreItem<T> }
+    store: { [dlid: string]: StoreItem<T> }
     private retrierAttempts?: number
     private retrierDelay?: number
     private accTokenGuardTime: number
@@ -526,25 +561,60 @@ export abstract class CortexCredentialProvider<T>  {
      * @param item element to be stored
      * @param metadata optional metadata (used by multitenant applications to attach tenant ID)
      */
-    protected abstract upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void>
+    abstract upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void>
 
     /**
      * Implementation dependant. Must delete an item from the store
      * @param datalakeId datalake identificator
      */
-    protected abstract deleteStoreItem(datalakeId: string): Promise<void>
+    abstract deleteStoreItem(datalakeId: string): Promise<void>
 
     /**
      * Implementation dependant. Must return the store item
      * @param datalakeId datalake identificator
      * @returns the corresponding item from the store
      */
-    protected abstract getStoreItem(datalakeId: string): Promise<StoreItem<T> | undefined>
+    abstract getStoreItem(datalakeId: string): Promise<StoreItem<T> | undefined>
 
     /**
      * Implementation dependant. A way to trigger the external DB initial load must be provided.
      * The subclass implementation should compare the protected object `store`
      * with the external data and update it if needed.
+     * @param store refrence to the current in-memory store
      */
-    abstract loadDb(): Promise<void>
+    abstract loadDb(store: { [dlid: string]: StoreItem<T> }): Promise<void>
+
 }
+
+/**
+ * Buils a CortexCredentialsObject from provided options and storage object
+ * 
+ * @param ops configuration options
+ * @param storage object implementing the secrets storage interface
+ * @returns an instantiated CortexCredentialsProvider object
+ */
+export function cortexCredentialsProviderFactory<T>(
+    ops: CredentialProviderOptions & { clientId: string, clientSecret: string },
+    storage: SecretsStorage<T>
+): CortexCredentialProvider<T> {
+    return new (class FactCredsProvider extends CortexCredentialProvider<T> {
+        upsertStoreItem(datalakeId: string, item: StoreItem<T>): Promise<void> {
+            return storage.upsertStoreItem(datalakeId, item)
+        }
+        deleteStoreItem(datalakeId: string): Promise<void> {
+            return storage.deleteStoreItem(datalakeId)
+        }
+        getStoreItem(datalakeId: string): Promise<StoreItem<T> | undefined> {
+            return storage.getStoreItem(datalakeId)
+        }
+        loadDb(store: { [dlid: string]: StoreItem<T> }): Promise<void> {
+            return storage.loadDb(store)
+        }
+        constructor(ops: CredentialProviderOptions & {
+            clientId: string, clientSecret: string
+        }) {
+            super(ops);
+        }
+    })(ops)
+}
+
