@@ -14,11 +14,11 @@ describe('cortex hub', function () {
             constructor() {
                 super({ clientId: 'client_id', clientSecret: 'client_secret' })
             }
-            protected async upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void> {
+            async upsertStoreItem(datalakeId: string, item: StoreItem<HubMetadata<never>>): Promise<void> {
             }
-            protected async deleteStoreItem(datalakeId: string): Promise<void> {
+            async deleteStoreItem(datalakeId: string): Promise<void> {
             }
-            protected async getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>>> {
+            async getStoreItem(datalakeId: string): Promise<StoreItem<HubMetadata<never>>> {
                 return undefined
             }
             async loadDb(): Promise<void> {

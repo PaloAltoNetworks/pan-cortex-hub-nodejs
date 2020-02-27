@@ -33,8 +33,8 @@ export declare class SimpleCredentialsProvider extends CortexCredentialProvider<
         entryPoint?: string;
         datalakeId?: string;
     }): Promise<Credentials>;
-    protected upsertStoreItem(datalakeId: string, item: StoreItem<never>): Promise<void>;
-    protected deleteStoreItem(datalakeId: string): Promise<void>;
-    protected getStoreItem(datalakeId: string): Promise<StoreItem<never>>;
+    upsertStoreItem(datalakeId: string, item: StoreItem<never>): Promise<void>;
+    deleteStoreItem(datalakeId: string): Promise<void>;
+    getStoreItem(datalakeId: string): Promise<StoreItem<never>>;
     loadDb(): Promise<void>;
 }
