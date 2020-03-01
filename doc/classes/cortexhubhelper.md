@@ -44,7 +44,7 @@ Cortex Hub
 
 \+ **new CortexHubHelper**(`idpCallbackUrl`: string, `credProv`: [CortexCredentialProvider](cortexcredentialprovider.md)‹[HubMetadata](../interfaces/hubmetadata.md)‹T››, `ops?`: [CortexHelperOptions](../interfaces/cortexhelperoptions.md)): *[CortexHubHelper](cortexhubhelper.md)*
 
-*Defined in [src/hub/hubhelper.ts:131](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L131)*
+*Defined in [src/hub/hubhelper.ts:131](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L131)*
 
 Constructor method
 
@@ -64,7 +64,7 @@ Name | Type | Description |
 
 • **credProvider**: *[CortexCredentialProvider](cortexcredentialprovider.md)‹[HubMetadata](../interfaces/hubmetadata.md)‹T››*
 
-*Defined in [src/hub/hubhelper.ts:130](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L130)*
+*Defined in [src/hub/hubhelper.ts:130](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L130)*
 
 ## Methods
 
@@ -72,7 +72,7 @@ Name | Type | Description |
 
 ▸ **deleteDatalake**(`tenantId`: string, `datalakeId`: string): *Promise‹void›*
 
-*Defined in [src/hub/hubhelper.ts:340](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L340)*
+*Defined in [src/hub/hubhelper.ts:340](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L340)*
 
 Deletes a datalake metadata record
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **getCredentialsObject**(`tenantId`: string, `datalakeId`: string): *Promise‹[Credentials](../interfaces/credentials.md)›*
 
-*Defined in [src/hub/hubhelper.ts:350](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L350)*
+*Defined in [src/hub/hubhelper.ts:350](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L350)*
 
 Get a credentials object for this tenant data lake combination
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **getDatalake**(`tenantId`: string, `datalakeId`: string): *Promise‹[CortexClientParams](../interfaces/cortexclientparams.md)‹T› | undefined›*
 
-*Defined in [src/hub/hubhelper.ts:327](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L327)*
+*Defined in [src/hub/hubhelper.ts:327](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L327)*
 
 Gets metadata of a given Datalake ID as a `CortexClientParams` object
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **hubParamsRegister**(`params`: string, `tenantId`: string): *Promise‹[CortexClientParams](../interfaces/cortexclientparams.md)‹T››*
 
-*Defined in [src/hub/hubhelper.ts:248](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L248)*
+*Defined in [src/hub/hubhelper.ts:248](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L248)*
 
 Parses the CortexHub BASE64 params string into a CortexClientParams object
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **idpAuthCallback**(`code`: string, `stateId`: string, `tId`: string): *Promise‹[Credentials](../interfaces/credentials.md)›*
 
-*Defined in [src/hub/hubhelper.ts:218](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L218)*
+*Defined in [src/hub/hubhelper.ts:218](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L218)*
 
 Completes the OAuth2 code grant flow and returns a valid Credentials
 object for the just authorized datalake
@@ -177,7 +177,7 @@ ___
 
 ▸ **idpAuthRequest**(`tenantId`: string, `datalakeId`: string, `scope`: string[]): *Promise‹URL›*
 
-*Defined in [src/hub/hubhelper.ts:185](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L185)*
+*Defined in [src/hub/hubhelper.ts:185](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L185)*
 
 Prepares an IDP authorization request
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **listActiveDatalake**(`tenantId`: string): *Promise‹string[]›*
 
-*Defined in [src/hub/hubhelper.ts:314](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L314)*
+*Defined in [src/hub/hubhelper.ts:314](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L314)*
 
 Retrieve the list of data lake id's that has been successfully authorized
 by the user
@@ -221,7 +221,7 @@ ___
 
 ▸ **listDatalake**(`tenantId`: string): *Promise‹object[]›*
 
-*Defined in [src/hub/hubhelper.ts:300](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L300)*
+*Defined in [src/hub/hubhelper.ts:300](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L300)*
 
 Retrieves the list of datalakes registered under this tenant
 
