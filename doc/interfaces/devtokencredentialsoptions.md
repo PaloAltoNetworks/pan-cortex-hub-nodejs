@@ -23,7 +23,7 @@ Options to customize a DevTokenCredentials subclass
 
 • **developerToken**? : *undefined | string*
 
-*Defined in [src/hub/credentials_devtoken.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L52)*
+*Defined in [src/hub/credentials_devtoken.ts:52](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L52)*
 
 Developer Token string
 
@@ -33,7 +33,7 @@ ___
 
 • **developerTokenProvider**? : *undefined | string*
 
-*Defined in [src/hub/credentials_devtoken.ts:48](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L48)*
+*Defined in [src/hub/credentials_devtoken.ts:48](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L48)*
 
 URI for the developer token provider
 
@@ -43,7 +43,7 @@ ___
 
 • **entryPoint**? : *undefined | string*
 
-*Defined in [src/hub/credentials_devtoken.ts:56](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L56)*
+*Defined in [src/hub/credentials_devtoken.ts:56](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L56)*
 
 Cortex API fqdn to use (region)
 
@@ -53,7 +53,7 @@ ___
 
 • **guardTime**? : *undefined | number*
 
-*Defined in [src/hub/credentials_devtoken.ts:61](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L61)*
+*Defined in [src/hub/credentials_devtoken.ts:61](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L61)*
 
 Amount of seconds ahead of access_token expiration in which a refresh
 operation should be attempted
