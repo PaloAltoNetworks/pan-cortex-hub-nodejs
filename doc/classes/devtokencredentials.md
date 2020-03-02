@@ -35,7 +35,7 @@ Use its static `factory` method to instantiate an object of this class.
 
 *Inherited from [CredentialsBase](credentialsbase.md).[constructor](credentialsbase.md#protected-constructor)*
 
-*Defined in [src/hub/credentials.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials.ts#L34)*
+*Defined in [src/hub/credentials.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials.ts#L34)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 *Inherited from [CredentialsBase](credentialsbase.md).[getEntryPoint](credentialsbase.md#getentrypoint)*
 
-*Defined in [src/hub/credentials.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials.ts#L42)*
+*Defined in [src/hub/credentials.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials.ts#L42)*
 
 **Returns:** *string*
 
@@ -69,7 +69,7 @@ ___
 
 *Overrides [CredentialsBase](credentialsbase.md).[getToken](credentialsbase.md#abstract-gettoken)*
 
-*Defined in [src/hub/credentials_devtoken.ts:135](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L135)*
+*Defined in [src/hub/credentials_devtoken.ts:135](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L135)*
 
 Returns the access token or undefined if no refresh operation has been executed
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **factory**(`ops?`: [DevTokenCredentialsOptions](../interfaces/devtokencredentialsoptions.md)): *[DevTokenCredentials](devtokencredentials.md)*
 
-*Defined in [src/hub/credentials_devtoken.ts:94](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_devtoken.ts#L94)*
+*Defined in [src/hub/credentials_devtoken.ts:94](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_devtoken.ts#L94)*
 
 Factory method to instantiate a DevTokenCredentials class. You must
 either execute this function in an environment with the variable

@@ -29,7 +29,7 @@
 
 *Overrides [SdkError](sdkerror.md).[constructor](sdkerror.md#constructor)*
 
-*Defined in [src/hub/utils.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/utils.ts#L34)*
+*Defined in [src/hub/utils.ts:34](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/utils.ts#L34)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 *Inherited from [SdkError](sdkerror.md).[errorType](sdkerror.md#errortype)*
 
-*Defined in [src/sdkError.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/sdkError.ts#L44)*
+*Defined in [src/sdkError.ts:44](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/sdkError.ts#L44)*
 
 ___
 

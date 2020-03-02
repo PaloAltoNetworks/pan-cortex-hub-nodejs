@@ -36,7 +36,7 @@ instantiate an object of this class
 
 *Overrides [CredentialsBase](credentialsbase.md).[constructor](credentialsbase.md#protected-constructor)*
 
-*Defined in [src/hub/credentials_static.ts:23](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_static.ts#L23)*
+*Defined in [src/hub/credentials_static.ts:23](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_static.ts#L23)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ Name | Type |
 
 *Inherited from [CredentialsBase](credentialsbase.md).[getEntryPoint](credentialsbase.md#getentrypoint)*
 
-*Defined in [src/hub/credentials.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials.ts#L42)*
+*Defined in [src/hub/credentials.ts:42](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials.ts#L42)*
 
 **Returns:** *string*
 
@@ -71,7 +71,7 @@ ___
 
 *Overrides [CredentialsBase](credentialsbase.md).[getToken](credentialsbase.md#abstract-gettoken)*
 
-*Defined in [src/hub/credentials_static.ts:30](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_static.ts#L30)*
+*Defined in [src/hub/credentials_static.ts:30](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_static.ts#L30)*
 
 **Parameters:**
 

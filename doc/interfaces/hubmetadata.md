@@ -27,7 +27,7 @@ Metadata attached by HubHelper into CredentialProviders store
 
 • **clientParams**: *[CortexClientParams](cortexclientparams.md)‹T›*
 
-*Defined in [src/hub/hubhelper.ts:97](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L97)*
+*Defined in [src/hub/hubhelper.ts:97](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L97)*
 
 Decoded params as provided by Cortex Hub
 
@@ -37,7 +37,7 @@ ___
 
 • **datalakeId**: *string*
 
-*Defined in [src/hub/hubhelper.ts:89](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L89)*
+*Defined in [src/hub/hubhelper.ts:89](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L89)*
 
 Requested datalakeID
 
@@ -47,7 +47,7 @@ ___
 
 • **stateCode**: *object*
 
-*Defined in [src/hub/hubhelper.ts:93](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L93)*
+*Defined in [src/hub/hubhelper.ts:93](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L93)*
 
 State codes generated for this datalake (pre-authorization)
 
@@ -61,6 +61,6 @@ ___
 
 • **tenantId**: *string*
 
-*Defined in [src/hub/hubhelper.ts:85](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/hubhelper.ts#L85)*
+*Defined in [src/hub/hubhelper.ts:85](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/hubhelper.ts#L85)*
 
 Requester Tenant ID
