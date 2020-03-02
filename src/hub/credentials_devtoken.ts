@@ -98,7 +98,7 @@ export class DevTokenCredentials extends CredentialsBase {
         }
         const tokenProvider = (ops && ops.developerTokenProvider) || env[ENV_DEVELOPER_TOKEN_PROVIDER] || DEV_TOKEN_PROVIDER
         const entryPoint = (ops && ops.entryPoint) || APIEPMAP['americas']
-        const guardTime = ops && ops.guardTime || 3300
+        const guardTime = ops && ops.guardTime || 300
         commonLogger(logLevel.INFO, `Creating Developer Token Credentials (entryPoint:'${entryPoint}' ,tokenProvider:'${tokenProvider}')`)
         return new DevTokenCredentials(entryPoint, developerToken, tokenProvider, guardTime)
     }

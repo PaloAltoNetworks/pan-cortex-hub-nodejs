@@ -34,7 +34,7 @@ Methods that deal with secret storage
 
 ▸ **deleteStoreItem**(`datalakeId`: string): *Promise‹void›*
 
-*Defined in [src/hub/credentials_provider.ts:145](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L145)*
+*Defined in [src/hub/credentials_provider.ts:145](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L145)*
 
 Removes an object from the store
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **getStoreItem**(`datalakeId`: string): *Promise‹[StoreItem](storeitem.md)‹T› | undefined›*
 
-*Defined in [src/hub/credentials_provider.ts:153](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L153)*
+*Defined in [src/hub/credentials_provider.ts:153](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L153)*
 
 Returns a secrets object from the store.
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **loadDb**(`store`: object): *Promise‹void›*
 
-*Defined in [src/hub/credentials_provider.ts:162](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L162)*
+*Defined in [src/hub/credentials_provider.ts:162](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L162)*
 
 Loads secrets stored externaly into the in-memory store. Implementator
 should compare the passed object with the external store contents and
@@ -92,7 +92,7 @@ ___
 
 ▸ **upsertStoreItem**(`datalakeId`: string, `item`: [StoreItem](storeitem.md)‹T›): *Promise‹void›*
 
-*Defined in [src/hub/credentials_provider.ts:139](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L139)*
+*Defined in [src/hub/credentials_provider.ts:139](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L139)*
 
 Creates of updates a secrets object belonging to a specific data lake identifier
 

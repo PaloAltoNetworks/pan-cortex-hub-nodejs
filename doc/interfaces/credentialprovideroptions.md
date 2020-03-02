@@ -26,7 +26,7 @@ Configuration options for a `CortexCredentialProvider` class
 
 • **accTokenGuardTime**? : *undefined | number*
 
-*Defined in [src/hub/credentials_provider.ts:180](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L180)*
+*Defined in [src/hub/credentials_provider.ts:180](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L180)*
 
 How soon to expiration before the access token is automatically refreshed. Defaults to `300` (5 minutes)
 
@@ -36,7 +36,7 @@ ___
 
 • **idpRevokeUrl**? : *undefined | string*
 
-*Defined in [src/hub/credentials_provider.ts:176](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L176)*
+*Defined in [src/hub/credentials_provider.ts:176](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L176)*
 
 IDP Token Revoke Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RevokeToken`
 
@@ -46,7 +46,7 @@ ___
 
 • **idpTokenUrl**? : *undefined | string*
 
-*Defined in [src/hub/credentials_provider.ts:172](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L172)*
+*Defined in [src/hub/credentials_provider.ts:172](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L172)*
 
 IDP Token Operation Entry Point. Defaults to `https://api.paloaltonetworks.com/api/oauth2/RequestToken`
 
@@ -56,7 +56,7 @@ ___
 
 • **retrierAttempts**? : *undefined | number*
 
-*Defined in [src/hub/credentials_provider.ts:184](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L184)*
+*Defined in [src/hub/credentials_provider.ts:184](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L184)*
 
 How many attempts to contact IDP before giving up. Defaults to `3`
 
@@ -66,6 +66,6 @@ ___
 
 • **retrierDelay**? : *undefined | number*
 
-*Defined in [src/hub/credentials_provider.ts:188](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/bb3819c/src/hub/credentials_provider.ts#L188)*
+*Defined in [src/hub/credentials_provider.ts:188](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L188)*
 
 How many milliseconds to wait between retry attempts. Defauls to `100` milliseconds
