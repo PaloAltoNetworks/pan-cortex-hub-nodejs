@@ -106,7 +106,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithCode](cortexcredentialprovider.md#addwithcode)*
 
-*Defined in [src/hub/credentials_provider.ts:404](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L404)*
+*Defined in [src/hub/credentials_provider.ts:405](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L405)*
 
 Issues a new credentials object for a datalake you have static access to
 its initial code.
@@ -147,7 +147,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[addWithRefreshToken](cortexcredentialprovider.md#addwithrefreshtoken)*
 
-*Defined in [src/hub/credentials_provider.ts:362](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L362)*
+*Defined in [src/hub/credentials_provider.ts:363](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L363)*
 
 Issues a new credentials object for a datalake you have static access to its `refreshToken`.
 
@@ -173,7 +173,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[deleteDatalake](cortexcredentialprovider.md#deletedatalake)*
 
-*Defined in [src/hub/credentials_provider.ts:497](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L497)*
+*Defined in [src/hub/credentials_provider.ts:498](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L498)*
 
 Completely removes a datalake from the store (it revokes the refresh
 token if already authorized)
@@ -214,7 +214,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getAccessToken](cortexcredentialprovider.md#getaccesstoken)*
 
-*Defined in [src/hub/credentials_provider.ts:512](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L512)*
+*Defined in [src/hub/credentials_provider.ts:513](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L513)*
 
 Main method used by a bound Credentials object. Returns the current `access_token` and its
 expiration time. It auto-refreshes the `access_token` if needed based on the `accTokenGuardTime`
@@ -255,7 +255,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[getCredentialsObject](cortexcredentialprovider.md#getcredentialsobject)*
 
-*Defined in [src/hub/credentials_provider.ts:437](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L437)*
+*Defined in [src/hub/credentials_provider.ts:438](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L438)*
 
 Retrieves the Credentials object for a given datalake
 
@@ -309,7 +309,7 @@ ___
 
 *Inherited from [CortexCredentialProvider](cortexcredentialprovider.md).[revokeDatalake](cortexcredentialprovider.md#revokedatalake)*
 
-*Defined in [src/hub/credentials_provider.ts:457](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L457)*
+*Defined in [src/hub/credentials_provider.ts:458](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L458)*
 
 Revokes a previous authorized datalake (revokes its OAUTH2 `refresh_token`)
 
