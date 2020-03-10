@@ -1,6 +1,6 @@
 {
   "name": "@paloaltonetworks/pan-cortex-hub",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Palo Alto Networks Cortex hub client library",
   "homepage": "https://github.com/PaloAltoNetworks/pan-cortex-hub-nodejs#readme",
   "repository": {

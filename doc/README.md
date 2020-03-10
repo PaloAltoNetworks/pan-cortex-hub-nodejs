@@ -387,7 +387,7 @@ ___
 
 ▸ **cortexCredentialsProviderFactory**<**T**>(`ops`: [CredentialProviderOptions](interfaces/credentialprovideroptions.md) & object, `storage`: [SecretsStorage](interfaces/secretsstorage.md)‹T›): *[CortexCredentialProvider](classes/cortexcredentialprovider.md)‹T›*
 
-*Defined in [src/hub/credentials_provider.ts:596](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L596)*
+*Defined in [src/hub/credentials_provider.ts:597](https://github.com/xhoms/pan-cortex-hub-nodejs/blob/master/src/hub/credentials_provider.ts#L597)*
 
 Buils a CortexCredentialsObject from provided options and storage object
 
