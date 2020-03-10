@@ -250,8 +250,9 @@ export abstract class CortexCredentialProvider<T> implements SecretsStorage<T> {
         if (dlid) {
             await this.lazyInitStoreItem(dlid)
             if (value) {
-                this.store[dlid] = value
-                await this.upsertStoreItem(dlid, value)
+                const mergedValue = { ...this.store[dlid], ...value }
+                this.store[dlid] = mergedValue
+                await this.upsertStoreItem(dlid, mergedValue)
             }
             return this.store[dlid]
         }
