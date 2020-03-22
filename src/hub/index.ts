@@ -13,7 +13,7 @@
 
 export { Credentials } from './credentials'
 export { StaticCredentials } from './credentials_static'
-export { DevTokenCredentialsOptions, DevTokenCredentials } from './credentials_devtoken'
+export { DevTokenCredentialsOptions, DevTokenCredentials, DevTokenSrvResponse } from './credentials_devtoken'
 export {
     CortexCredentialProvider, CredentialProviderOptions, CredentialsItem,
     StoreItem, cortexCredentialsProviderFactory, SecretsStorage
